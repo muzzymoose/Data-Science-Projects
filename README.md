@@ -1,31 +1,19 @@
-<h1 align="left">Does going to university in a different country affect your mental health? A Japanese international university surveyed its students in 2018 and published a study the following year that was approved by several ethical and regulatory boards. </h1> 
-<h2 align="left">The study found that international students have a higher risk of mental health difficulties than the general population, and that social connectedness (belonging to a social group) and acculturative stress (stress associated with joining a new culture) are predictive of depression. Explore and analyze the students data to see how the length of stay (stay) impacts the average mental health diagnostic scores of the international students present in the study. <br>
-<br>
+# Data Science Projects
+![](https://www.btelligent.com/fileadmin/_processed_/7/0/csm_data-science-ansatz_ddef991d7d.jpg)
+Welcome to my Data Science Projects Repository! This repository contains a collection of my data science projects, showcasing my skills and expertise in the field. Each project demonstrates different aspects of data analysis, machine learning, and visualization. Along with various different tools
 
-| Field Name      | Description                                        |
-| --------------  | -------------------------------------------------- |
-| `inter_dom`     | Types of students (international or domestic)      |
-| `japanese_cate` | Japanese language proficiency                      |
-| `english_cate`  | English language proficiency                       |
-| `academic`      | Current academic level (undergraduate or graduate) |
-| `age`           | Current age of student                             |
-| `stay`          | Current length of stay in years                    |
-| `todep`         | Total score of depression (PHQ-9 test)             |
-| `tosc`          | Total score of social connectedness (SCS test)     |
-| `toas`          | Total score of acculturative stress (ASISS test)   |
+ ![GitHub Repo stars](https://img.shields.io/github/stars/SUKHMAN-SINGH-1612/Data-Science-Projects?style=social)  ![GitHub forks](https://img.shields.io/github/forks/SUKHMAN-SINGH-1612/Data-Science-Projects?style=social)
 
 
-</h2>
-<h3 align="left">
-  Explore the `students` data using PostgreSQL to find out if you would come to a similar conclusion for international students and see if the length of stay is a contributing factor.
-Here is a data description of the columns you may find helpful.<br></br>
-  
-  1 - Return a table with nine rows and five columns. <br>
-  2 - The five columns should be aliased as: stay, count_int, average_phq, average_scs, and average_as, in that order. <br>
-  3 - The average columns should contain the average of the todep (PHQ-9 test), tosc (SCS test), and toas (ASISS test) columns for each length of stay, rounded to two decimal places.<br>
-  4 - The count_int column should be the number of international students for each length of stay. Sort the results by the length of stay in descending order.</h3> <br>
-<br>
-  
+### GitHub Page 
+[![Data-Science-Projects](https://img.shields.io/badge/Data_Science_Projects-GitHub_Page-%2300BFFF.svg)](https://sukhman-singh-1612.github.io/data_science/)
 
-
-
+## Projects
+1. [Breast Cancer Prediction](https://github.com/SUKHMAN-SINGH-1612/Data-Science-Projects/tree/main/Breast%20Cancer%20Prediction)
+   - **Description:** The project predicts the diagnosis (M = malignant, B = benign) of the Breast Cancer
+   - **Technologies Used:** The notebooks uses Decision Tree Classification and Logistic Regression
+   - **Results:** The logistic regression gave 97% accuracy and decision tree gave 93.5% accuracy
+2. [Red Wine Quality Prediction](https://github.com/SUKHMAN-SINGH-1612/Data-Science-Projects/tree/main/Red%20Wine%20Quality)
+   -  **Description:** The project predicts the quality of the wine in the value 0 or 1. 1 for good quality and 0 for bad quality
+   - **Technologies Used:** The notebooks uses logistic regression, support vector machine, decision tree and knn
+   - **Results:** The logistic regression model performs the best with accuracy of 86.67%
