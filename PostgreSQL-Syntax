@@ -1,0 +1,5 @@
+```SELECT
+  stay,
+  COUNT(inter_dom) AS count_int,
+  round
+```
