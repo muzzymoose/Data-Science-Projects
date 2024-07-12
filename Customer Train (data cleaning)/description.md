@@ -20,3 +20,13 @@ You've been given access to `customer_train.csv`, which is a subset of their ent
 | `last_new_job`           | The number of years between the student's current and previous jobs.             |
 | `training_hours`         | The number of hours of training completed.                                       |
 | `job_change`             | An indicator of whether the student is looking for a new job (`1`) or not (`0`). |
+
+
+The Head Data Scientist at Training Data Ltd. has asked you to create a DataFrame called ds_jobs_transformed that stores the data in customer_train.csv much more efficiently. Specifically, they have set the following requirements:<br>
+
+  •	Columns containing categories with only two factors must be stored as Booleans (bool).<br>
+  •	Columns containing integers only must be stored as 32-bit integers (int32).<br>
+  •	Columns containing floats must be stored as 16-bit floats (float16).<br>
+  •	Columns containing nominal categorical data must be stored as the category data type.<br>
+  •	Columns containing ordinal categorical data must be stored as ordered categories, and not mapped to numerical values, with an order that reflects the natural order of the column.<br>
+  •	The DataFrame should be filtered to only contain students with 10 or more years of experience at companies with at least 1000 employees, as their recruiter base is suited to more experienced professionals at enterprise companies.<br>
