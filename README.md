@@ -15,3 +15,9 @@ Welcome to my Data Science Projects Repository! This repository contains a colle
    - **Description:** Perform data cleaning from a large dataset using python3
    - **Technologies Used:** The notebooks uses pandas
    - **Results:** Successfully cleaned data using python3
+3. [Dr. Semmelweis and the Discovery of Handwashing](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Dr.%20Semmelweis%20and%20the%20Discovery%20of%20Handwashing)
+   - **Description:** Impact of washing hands in preventing birth fever disease
+   - **Technologies Used:** The notebooks uses pandas, matplotlib and bootstrap analysis
+   - **Results:** Washing hands before attending women giving birth reduces birth fever disease 
+
+
