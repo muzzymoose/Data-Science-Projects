@@ -29,7 +29,7 @@ Welcome to my Data Science Projects Repository! This repository contains a colle
         - Naived Bayes, accuracy : 72%
         - Logistic Regression, accuracy : 78%
         - Support Vector Machines, accuracy : 86%
- 5. **(PostgreSQL)** [Hospital Database Analysis](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Dr.%20Semmelweis%20and%20the%20Discovery%20of%20Handwashing)
+ 5. **(PostgreSQL)** [Hospital Database Analysis](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Hospital%20Database)
     - **Description:** Analyzing patients' and doctors' information from a Hospital database
     - **Query Complexity:** Easy -> Medium -> Hard
     - **Results:** All results obtained successfully 
