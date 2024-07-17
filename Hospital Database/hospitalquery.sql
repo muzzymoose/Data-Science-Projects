@@ -457,11 +457,23 @@ FROM admissions AS a
 /* Question Set46 -  Hard */
 /* Q46: Each admission costs $50 for patients without insurance, and $10 for patients with insurance. All patients with an even patient_id have insurance. Give each patient a 'Yes' if they have insurance, and a 'No' if they don't have insurance. Add up the admission_total cost for each has_insurance group.  */
 
+SELECT
+    (CASE when patient_id%2 = 0 THEN 'Yes' ELSE 'No' END) AS 'has_insurance',
+    SUM((CASE WHEN patient_id%2 = 0 THEN 10 ELSE 50 END)) AS 'admission_cost'
+FROM admissions
+GROUP BY has_insurance
 
 
 /* Question Set47 -  Hard */
 /* Q47: Show the provinces that has more patients identified as 'M' than 'F'. Must only show full province_name  */
 
+SELECT
+     (SELECT p2.province_name
+     FROM province_names AS p2
+     WHERE p2.province_id = p1.province_id) AS province_name1
+FROM patients AS p1
+GROUP BY province_name1
+HAVING CASE WHEN SUM(gender = 'M') > SUM(gender = 'F') THEN 1 ELSE 0 END
 
 
 /* Question Set48 -  Hard */
