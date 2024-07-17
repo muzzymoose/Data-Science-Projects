@@ -9,5 +9,5 @@ Source : https://www.sql-practice.com/
 * Postgre SQL
 * PgAdmin4
 
-Schema- Music Store Database  
+Schema- Hospital Database <br>  
 ![HospitalDatabaseSchema](https://github.com/muzzymoose/Data-Science-Projects/blob/main/Hospital%20Database/hostpitalschemas.png?raw=true)
