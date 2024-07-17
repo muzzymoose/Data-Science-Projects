@@ -266,15 +266,124 @@ HAVING SUM(height) > 7000
 
 /* Question Set31 -  Medium */
 /* Q31: Show the difference between the largest weight and smallest weight for patients with the last name 'Maroni'  */
-/* Question Set32 -  Medium *//* Q32: Show all of the days of the month (1-31) and how many admission_dates occurred on that day. Sort by the day with most admissions to least admissions.  */
-/* Question Set33 -  Medium *//* Q33: Show the all columns for patient_id 542's most recent admission_date.  */
-/* Question Set34 -  Medium *//* Q34: Show patient_id, attending_doctor_id, and diagnosis for admissions that match one of the two criteria: (1) patient_id is an odd number and attending_doctor_id is either 1, 5, or 19. (2) attending_doctor_id contains a 2 and the length of patient_id is 3 characters.  */
-/* Question Set35 -  Medium *//* Q35: Show first_name, last_name, and the total number of admissions attended for each doctor. Every admission has been attended by a doctor.  */
-/* Question Set36 -  Medium *//* Q36: For each doctor, display their id, full name, and the first and last admission date they attended.  */
-/* Question Set37 -  Medium *//* Q37: Display the total amount of patients for each province. Order by descending.  */
-/* Question Set38 -  Medium *//* Q38: For every admission, display the patient's full name, their admission diagnosis, and their doctor's full name who diagnosed their problem.  */
-/* Question Set39 -  Medium *//* Q39: display the first name, last name and number of duplicate patients based on their first name and last name.  */
-/* Question Set40 -  Medium *//* Q40: Display patient's full name, height in the unit feet rounded to 1 decimal, weight in the unit pounds rounded to 0 decimals, birth_date, gender non abbreviated. Convert CM to feet by dividing by 30.48. Convert KG to pounds by multiplying by 2.205.  */
+
+SELECT MAX(weight) - MIN(weight) AS weight_diff
+FROM patients
+WHERE last_name like '%Maroni'
+
+
+/* Question Set32 -  Medium */
+/* Q32: Show all of the days of the month (1-31) and how many admission_dates occurred on that day. Sort by the day with most admissions to least admissions.  */
+
+SELECT day(admission_date), count(*) AS count_days
+FROM admissions
+group by DAY(admission_date)
+order by count_days DESC
+
+
+/* Question Set33 -  Medium */
+/* Q33: Show the all columns for patient_id 542's most recent admission_date.  */
+
+SELECT *
+FROM admissions
+WHERE patient_id = 542
+order by admission_date DESC
+LIMIT 1
+
+
+/* Question Set34 -  Medium */
+/* Q34: Show patient_id, attending_doctor_id, and diagnosis for admissions that match one of the two criteria: (1) patient_id is an odd number and attending_doctor_id is either 1, 5, or 19. (2) attending_doctor_id contains a 2 and the length of patient_id is 3 characters.  */
+
+SELECT patient_id,attending_doctor_id,diagnosis
+FROM admissions
+WHERE ((patient_id%2) is not 0 AND (attending_doctor_id = 1 or 
+                                    attending_doctor_id = 5 or 
+                                    attending_doctor_id = 19)) 
+                                    OR 
+                                   ((STR(attending_doctor_id) LIKE '%2' or
+                                     STR(attending_doctor_id) LIKE '2%')AND 
+                                    LEN(patient_id) = 3)
+
+
+/* Question Set35 -  Medium */
+/* Q35: Show first_name, last_name, and the total number of admissions attended for each doctor. Every admission has been attended by a doctor.  */
+
+SELECT 
+    (select first_name
+     FROM	doctors
+    WHERE doctors.doctor_id = admissions.attending_doctor_id) AS doc_firstname,
+    (select last_name
+     FROM	doctors
+    WHERE doctors.doctor_id = admissions.attending_doctor_id) AS doc_lastname , count(admission_date)
+FROM admissions
+group by attending_doctor_id
+
+
+/* Question Set36 -  Medium */
+/* Q36: For each doctor, display their id, full name, and the first and last admission date they attended.  */
+
+SELECT 
+    (select doctor_id
+     FROM	doctors
+    WHERE doctors.doctor_id = admissions.attending_doctor_id),
+    (select concat(first_name,' ',last_name)
+     FROM	doctors
+    WHERE doctors.doctor_id = admissions.attending_doctor_id) AS doc_fullname,
+    min(admission_date), max(admission_date)
+FROM admissions
+group by attending_doctor_id
+
+
+/* Question Set37 -  Medium */
+/* Q37: Display the total amount of patients for each province. Order by descending.  */
+
+SELECT 
+     (SELECT province_names.province_name
+     FROM province_names
+     WHERE province_names.province_id=patients.province_id) as province, count(*) as patient_count
+FROM patients
+LEFT JOIN province_names
+ON patients.province_id = province_names.province_id
+GROUP by province_names.province_name 
+ORDER BY patient_count DESC
+
+
+/* Question Set38 -  Medium */
+/* Q38: For every admission, display the patient's full name, their admission diagnosis, and their doctor's full name who diagnosed their problem.  */
+
+SELECT 
+     (select concat(first_name,' ',last_name)
+     FROM patients
+     WHERE patients.patient_id=admissions.patient_id) as patient_fullname, diagnosis,
+     (SELECT concat(first_name,' ',last_name)
+      FROM doctors
+      WHERE doctors.doctor_id=admissions.attending_doctor_id) AS doctor_fullname
+FROM admissions
+
+
+/* Question Set39 -  Medium */
+/* Q39: display the first name, last name and number of duplicate patients based on their first name and last name.  */
+
+SELECT first_name, last_name, count(*) count_patientsname
+FROM patients
+group by first_name,last_name
+HAVING count_patientsname >1
+
+
+/* Question Set40 -  Medium */
+/* Q40: Display patient's full name, height in the unit feet rounded to 1 decimal, weight in the unit pounds rounded to 0 decimals, birth_date, gender non abbreviated. Convert CM to feet by dividing by 30.48. Convert KG to pounds by multiplying by 2.205.  */
+
+SELECT 
+    concat(first_name,' ',last_name) as full_name, 
+    round(height/30.48,1) as ft, 
+    round(weight*2.205,0) as lbs,
+    birth_date,
+    	CASE WHEN gender = 'M' THEN 'Male'
+        ELSE 'Female'
+        END AS 'gender type'
+FROM patients
+
+
 /* Question Set41 -  Medium *//* Q41: Show patient_id, first_name, last_name from patients whose does not have any records in the admissions table. (Their patient_id does not exist in any admissions.patient_id rows.)  */
 /* Question Set42 -  Hard *//* Q42: Show all of the patients grouped into weight groups. Show the total amount of patients in each weight group. Order the list by the weight group decending. For example, if they weight 100 to 109 they are placed in the 100 weight group, 110-119 = 110 weight group, etc.  */
 /* Question Set43 -  Hard *//* Q43: Show patient_id, weight, height, isObese from the patients table. Display isObese as a boolean 0 or 1. Obese is defined as weight(kg)/(height(m)2) >= 30. weight is in units kg. height is in units cm.  */
