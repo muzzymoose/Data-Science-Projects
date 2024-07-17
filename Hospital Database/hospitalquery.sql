@@ -387,21 +387,58 @@ FROM patients
 /* Question Set41 -  Medium */
 /* Q41: Show patient_id, first_name, last_name from patients whose does not have any records in the admissions table. (Their patient_id does not exist in any admissions.patient_id rows.)  */
 
+SELECT patient_id, first_name, last_name
+FROM patients
+WHERE patient_id NOT IN 
+	(SELECT patient_id
+     FROM admissions
+     WHERE admissions.patient_id = patients.patient_id) 
 
 
 /* Question Set42 -  Hard */
 /* Q42: Show all of the patients grouped into weight groups. Show the total amount of patients in each weight group. Order the list by the weight group decending. For example, if they weight 100 to 109 they are placed in the 100 weight group, 110-119 = 110 weight group, etc.  */
 
+SELECT
+  COUNT(*) AS patients_in_group,
+  FLOOR(weight / 10) * 10 AS weight_group
+FROM patients
+GROUP BY weight_group
+ORDER BY weight_group DESC;
 
 
 /* Question Set43 -  Hard */
 /* Q43: Show patient_id, weight, height, isObese from the patients table. Display isObese as a boolean 0 or 1. Obese is defined as weight(kg)/(height(m)2) >= 30. weight is in units kg. height is in units cm.  */
 
+SELECT patient_id, weight, height, 
+  (CASE 
+      WHEN weight/(POWER(height/100.0,2)) >= 30 THEN
+          1
+      ELSE
+          0
+      END) AS isObese
+FROM patients;
 
 
 /* Question Set44 -  Hard */
 /* Q44: Show patient_id, first_name, last_name, and attending doctor's specialty. Show only the patients who has a diagnosis as 'Dementia' and the doctor's first name is 'Lisa'. Check patients, admissions, and doctors tables for required information.  */
 
+SELECT patient_id,  
+      (SELECT first_name
+      FROM patients
+      WHERE patients.patient_id = admissions.patient_id) AS patient_firstname,
+      (SELECT last_name
+      FROM patients
+      WHERE patients.patient_id = admissions.patient_id) AS patient_lastname, 
+      (SELECT specialty
+       FROM doctors
+       WHERE doctors.doctor_id=admissions.attending_doctor_id) AS doc_specialty
+FROM admissions
+WHERE diagnosis = 'Epilepsy' AND
+	attending_doctor_id IN 
+    	(SELECT doctor_id
+         FROM doctors
+         WHERE doctors.doctor_id = admissions.attending_doctor_id AND
+         first_name = 'Lisa')
 
 
 /* Question Set45 -  Hard */
@@ -410,6 +447,11 @@ FROM patients
 /*  2. the numerical length of patient's last_name  */
 /*  3. year of patient's birth_date  */
 
+SELECT DISTINCT a.patient_id, 
+	(SELECT CONCAT(patient_id,len(last_name),YEAR(birth_date))
+         FROM patients AS p 
+         WHERE p.patient_id = a.patient_id) AS 'temp_password'
+FROM admissions AS a 
 
 
 /* Question Set46 -  Hard */
