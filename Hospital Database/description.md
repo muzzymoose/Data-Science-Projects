@@ -10,4 +10,4 @@ Source : https://www.sql-practice.com/
 * PgAdmin4
 
 Schema- Music Store Database  
-![HospitalDatabaseSchema](Hospital Database/hostpitalschemas.png)
+![HospitalDatabaseSchema](https://github.com/muzzymoose/Data-Science-Projects/blob/main/Hospital%20Database/hostpitalschemas.png?raw=true)
