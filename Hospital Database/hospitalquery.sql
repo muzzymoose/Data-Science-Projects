@@ -42,7 +42,7 @@ Where allergies is null
 /* Q6: Show first name and last name concatinated into one column to show their full name. */
 
 SELECT concat(first_name,' ',last_name) AS full_name
-from patients
+FROM patients
 
 
 /*	Question Set 7 - Easy */
@@ -57,7 +57,7 @@ USING (province_id)
 /*	Question Set 8 - Easy */
 /* Q8: Show how many patients have a birth_date with 2010 as the birth year. */
 
-SELECT count(birth_date)
+SELECT COUNT(birth_date)
 FROM patients
 WHERE birth_date LIKE "2010%"
 
@@ -65,7 +65,7 @@ WHERE birth_date LIKE "2010%"
 /*	Question Set 9 - Easy */
 /* Q9: Show the first_name, last_name, and height of the patient with the greatest height. */
 
-SELECT first_name, last_name, MAX(height) as Max_height
+SELECT first_name, last_name, MAX(height) AS Max_height
 FROM patients
 LIMIT 1;
 
@@ -86,7 +86,7 @@ WHERE
 /*	Question Set 11 - Easy */
 /* Q11: Show the total number of admissions */
 
-SELECT count(*)
+SELECT COUNT(*)
 FROM admissions
 
 
@@ -102,7 +102,7 @@ WHERE
 /*	Question Set 13 - Easy */
 /* Q13: Show the patient id and the total number of admissions for patient_id 579. */
 
-SELECT patient_id, count(admission_date)
+SELECT patient_id, COUNT(admission_date)
 FROM admissions
 WHERE 
 	patient_id = 579
@@ -141,24 +141,24 @@ WHERE
 /* Q17: Show unique birth years from patients and order them by ascending.  */
 
 SELECT distinct year(birth_date)
-from patients
-order by birth_date ASC
+FROM patients
+ORDER BY birth_date ASC
 
 
 /* Question Set18 -  Medium */
 /* Q18: Show unique first names from the patients table which only occurs once in the list. For example, if two or more people are named 'John' in the first_name column then don't include their name in the output list. If only 1 person is named 'Leo' then include them in the output.  */
 
 SELECT distinct first_name
-from patients
-group by first_name 
-HAVING count(first_name) = 1
+FROM patients
+GROUP BY first_name 
+HAVING COUNT(first_name) = 1
 
 
 /* Question Set19 -  Medium */
 /* Q19: Show patient_id and first_name from patients where their first_name start and ends with 's' and is at least 6 characters long.  */
 
 SELECT patient_id,first_name
-from patients
+FROM patients
 WHERE first_name LIKE 'S%' AND
 	first_name LIKE '%s' AND
     len(first_name) >= 6
@@ -168,7 +168,7 @@ WHERE first_name LIKE 'S%' AND
 /* Q20: Show patient_id, first_name, last_name from patients whos diagnosis is 'Dementia'. Primary diagnosis is stored in the admissions table.  */
 
 SELECT a.patient_id, p.first_name, p.last_name
-From admissions AS a 
+FROM admissions AS a 
 LEFT JOIN patients AS p 
 USING (patient_id)
 WHERE diagnosis = 'Dementia'
@@ -179,15 +179,15 @@ WHERE diagnosis = 'Dementia'
 
 SELECT first_name
 FROM patients
-order by len(first_name) ASC, first_name ASC
+ORDER BY len(first_name) ASC, first_name ASC
 
 
 /* Question Set22 -  Medium */
 /* Q22: Show the total amount of male patients and the total amount of female patients in the patients table. Display the two results in the same row.  */
 
-select
-    (SELECt COUNT(*) FROM patients WHERE gender = 'M'),
-    (SELECt COUNT(*) FROM patients WHERE gender = 'F')
+SELECT
+    (SELECT COUNT(*) FROM patients WHERE gender = 'M'),
+    (SELECT COUNT(*) FROM patients WHERE gender = 'F')
 
 
 /* Question Set23 -  Medium */
@@ -196,7 +196,7 @@ select
 SELECT first_name, last_name, allergies
 FROM patients
 WHERE allergies = 'Penicillin' OR allergies = 'Morphine'
-order by allergies ASC, first_name Asc, last_name ASC
+ORDER BY allergies ASC, first_name Asc, last_name ASC
 
 
 /* Question Set24 -  Medium */
@@ -204,7 +204,7 @@ order by allergies ASC, first_name Asc, last_name ASC
 
 SELECT patient_id , diagnosis
 FROM admissions
-group by patient_id, diagnosis
+GROUP BY patient_id, diagnosis
 HAVING COUNT(patient_id) >=2 AND
 		COUNT(diagnosis) >=2
 
@@ -212,30 +212,30 @@ HAVING COUNT(patient_id) >=2 AND
 /* Question Set25 -  Medium */
 /* Q25: Show the city and the total number of patients in the city. Order from most to least patients and then by city name ascending.  */
 
-select city, count(patient_id) AS count_patient
+SELECT city, COUNT(patient_id) AS count_patient
 FROM patients
-group by city
-order by count_patient DESC, city
+GROUP BY city
+ORDER BY count_patient DESC, city
 
 
 /* Question Set26 -  Medium */
 /* Q26: Show first name, last name and role of every person that is either patient or doctor. The roles are either "Patient" or "Doctor"  */
 
-SELECT first_name, last_name, 'Patient' as role 
+SELECT first_name, last_name, 'Patient' AS role 
 FROM patients
 union all
-select first_name, last_name, 'Doctor' 
-from doctors;
+SELECT first_name, last_name, 'Doctor' 
+FROM doctors;
 
 
 /* Question Set27 -  Medium */
 /* Q27: Show all allergies ordered by popularity. Remove 'NKA' and NULL values from query.  */
 
-SELECT allergies, count(*) AS total_diagnosis
-FROM patients as p 
+SELECT allergies, COUNT(*) AS total_diagnosis
+FROM patients AS p 
 WHERE allergies IS not null
-group by p.allergies
-order by total_diagnosis DESC
+GROUP BY p.allergies
+ORDER BY total_diagnosis DESC
 
 
 /* Question Set28 -  Medium */
@@ -244,15 +244,15 @@ order by total_diagnosis DESC
 SELECT first_name, last_name, birth_date
 FROM patients
 WHERE year(birth_date) IN (1970,1971,1972,1973,1974,1975,1976,1977,1978,1979)
-order by birth_date ASC
+ORDER BY birth_date ASC
 
 
 /* Question Set29 -  Medium */
 /* Q29: We want to display each patient's full name in a single column. Their last_name in all upper letters must appear first, then first_name in all lower case letters. Separate the last_name and first_name with a comma. Order the list by the first_name in decending order. EX: SMITH,jane  */
 
-SELECT concat(upper(last_name),",",LOWER(first_name)) as full_name
+SELECT concat(upper(last_name),",",LOWER(first_name)) AS full_name
 FROM patients
-order by first_name DESC
+ORDER BY first_name DESC
 
 
 /* Question Set30 -  Medium */
@@ -260,7 +260,7 @@ order by first_name DESC
 
 SELECT province_id, SUM(height)
 FROM patients
-group by province_id
+GROUP BY province_id
 HAVING SUM(height) > 7000
 
 
@@ -275,10 +275,10 @@ WHERE last_name like '%Maroni'
 /* Question Set32 -  Medium */
 /* Q32: Show all of the days of the month (1-31) and how many admission_dates occurred on that day. Sort by the day with most admissions to least admissions.  */
 
-SELECT day(admission_date), count(*) AS count_days
+SELECT day(admission_date), COUNT(*) AS count_days
 FROM admissions
-group by DAY(admission_date)
-order by count_days DESC
+GROUP BY DAY(admission_date)
+ORDER BY count_days DESC
 
 
 /* Question Set33 -  Medium */
@@ -287,7 +287,7 @@ order by count_days DESC
 SELECT *
 FROM admissions
 WHERE patient_id = 542
-order by admission_date DESC
+ORDER BY admission_date DESC
 LIMIT 1
 
 
@@ -309,29 +309,29 @@ WHERE ((patient_id%2) is not 0 AND (attending_doctor_id = 1 or
 /* Q35: Show first_name, last_name, and the total number of admissions attended for each doctor. Every admission has been attended by a doctor.  */
 
 SELECT 
-    (select first_name
+    (SELECT first_name
      FROM	doctors
     WHERE doctors.doctor_id = admissions.attending_doctor_id) AS doc_firstname,
-    (select last_name
+    (SELECT last_name
      FROM	doctors
-    WHERE doctors.doctor_id = admissions.attending_doctor_id) AS doc_lastname , count(admission_date)
+    WHERE doctors.doctor_id = admissions.attending_doctor_id) AS doc_lastname , COUNT(admission_date)
 FROM admissions
-group by attending_doctor_id
+GROUP BY attending_doctor_id
 
 
 /* Question Set36 -  Medium */
 /* Q36: For each doctor, display their id, full name, and the first and last admission date they attended.  */
 
 SELECT 
-    (select doctor_id
+    (SELECT doctor_id
      FROM	doctors
     WHERE doctors.doctor_id = admissions.attending_doctor_id),
-    (select concat(first_name,' ',last_name)
+    (SELECT concat(first_name,' ',last_name)
      FROM	doctors
     WHERE doctors.doctor_id = admissions.attending_doctor_id) AS doc_fullname,
     min(admission_date), max(admission_date)
 FROM admissions
-group by attending_doctor_id
+GROUP BY attending_doctor_id
 
 
 /* Question Set37 -  Medium */
@@ -340,11 +340,11 @@ group by attending_doctor_id
 SELECT 
      (SELECT province_names.province_name
      FROM province_names
-     WHERE province_names.province_id=patients.province_id) as province, count(*) as patient_count
+     WHERE province_names.province_id=patients.province_id) AS province, COUNT(*) AS patient_count
 FROM patients
 LEFT JOIN province_names
 ON patients.province_id = province_names.province_id
-GROUP by province_names.province_name 
+GROUP BY province_names.province_name 
 ORDER BY patient_count DESC
 
 
@@ -352,9 +352,9 @@ ORDER BY patient_count DESC
 /* Q38: For every admission, display the patient's full name, their admission diagnosis, and their doctor's full name who diagnosed their problem.  */
 
 SELECT 
-     (select concat(first_name,' ',last_name)
+     (SELECT concat(first_name,' ',last_name)
      FROM patients
-     WHERE patients.patient_id=admissions.patient_id) as patient_fullname, diagnosis,
+     WHERE patients.patient_id=admissions.patient_id) AS patient_fullname, diagnosis,
      (SELECT concat(first_name,' ',last_name)
       FROM doctors
       WHERE doctors.doctor_id=admissions.attending_doctor_id) AS doctor_fullname
@@ -364,9 +364,9 @@ FROM admissions
 /* Question Set39 -  Medium */
 /* Q39: display the first name, last name and number of duplicate patients based on their first name and last name.  */
 
-SELECT first_name, last_name, count(*) count_patientsname
+SELECT first_name, last_name, COUNT(*) count_patientsname
 FROM patients
-group by first_name,last_name
+GROUP BY first_name,last_name
 HAVING count_patientsname >1
 
 
@@ -374,9 +374,9 @@ HAVING count_patientsname >1
 /* Q40: Display patient's full name, height in the unit feet rounded to 1 decimal, weight in the unit pounds rounded to 0 decimals, birth_date, gender non abbreviated. Convert CM to feet by dividing by 30.48. Convert KG to pounds by multiplying by 2.205.  */
 
 SELECT 
-    concat(first_name,' ',last_name) as full_name, 
-    round(height/30.48,1) as ft, 
-    round(weight*2.205,0) as lbs,
+    concat(first_name,' ',last_name) AS full_name, 
+    round(height/30.48,1) AS ft, 
+    round(weight*2.205,0) AS lbs,
     birth_date,
     	CASE WHEN gender = 'M' THEN 'Male'
         ELSE 'Female'
