@@ -33,9 +33,9 @@ WHERE weight BETWEEN 100 AND 120;
 /*	Question Set 5 - Easy */
 /* Q5: Update the patients table for the allergies column. If the patient's allergies is null then replace it with 'NKA' */
 
-update patients
+UPDATE patients
 SET allergies = "NKA"
-Where allergies is null
+WHERE allergies IS NULL
 
 
 /*	Question Set 6 - Easy */
@@ -77,10 +77,10 @@ SELECT *
 FROM patients
 WHERE 
 	patient_id = 1 OR 
-    patient_id = 45 OR 
-    patient_id = 534 OR 
-    patient_id = 879 OR 
-    patient_id = 1000
+	patient_id = 45 OR 
+	patient_id = 534 OR 
+	patient_id = 879 OR 
+	patient_id = 1000
 
 
 /*	Question Set 11 - Easy */
@@ -123,8 +123,8 @@ WHERE
 SELECT first_name, last_name, birth_date
 FROM patients
 WHERE 
-	height > 160 AND
-    weight > 70
+    	height > 160 AND
+    	weight > 70
 
 
 /*	Question Set 16 - Easy */
@@ -133,14 +133,14 @@ WHERE
 SELECT first_name, last_name, allergies
 FROM patients
 WHERE 
-	allergies is not null AND
-    city = 'Hamilton'
+	allergies IS NOT NULL AND
+    	city = 'Hamilton'
 
 
 /* Question Set17 -  Medium */
 /* Q17: Show unique birth years from patients and order them by ascending.  */
 
-SELECT distinct year(birth_date)
+SELECT DISTINCT YEAR(birth_date)
 FROM patients
 ORDER BY birth_date ASC
 
@@ -148,7 +148,7 @@ ORDER BY birth_date ASC
 /* Question Set18 -  Medium */
 /* Q18: Show unique first names from the patients table which only occurs once in the list. For example, if two or more people are named 'John' in the first_name column then don't include their name in the output list. If only 1 person is named 'Leo' then include them in the output.  */
 
-SELECT distinct first_name
+SELECT DISTINCT first_name
 FROM patients
 GROUP BY first_name 
 HAVING COUNT(first_name) = 1
@@ -159,9 +159,9 @@ HAVING COUNT(first_name) = 1
 
 SELECT patient_id,first_name
 FROM patients
-WHERE first_name LIKE 'S%' AND
+WHERE 	first_name LIKE 'S%' AND
 	first_name LIKE '%s' AND
-    len(first_name) >= 6
+   	len(first_name) >= 6
 
 
 /* Question Set20 -  Medium */
@@ -196,7 +196,7 @@ SELECT
 SELECT first_name, last_name, allergies
 FROM patients
 WHERE allergies = 'Penicillin' OR allergies = 'Morphine'
-ORDER BY allergies ASC, first_name Asc, last_name ASC
+ORDER BY allergies ASC, first_name ASC, last_name ASC
 
 
 /* Question Set24 -  Medium */
@@ -205,8 +205,8 @@ ORDER BY allergies ASC, first_name Asc, last_name ASC
 SELECT patient_id , diagnosis
 FROM admissions
 GROUP BY patient_id, diagnosis
-HAVING COUNT(patient_id) >=2 AND
-		COUNT(diagnosis) >=2
+HAVING 	COUNT(patient_id) >=2 AND
+	COUNT(diagnosis) >=2
 
 
 /* Question Set25 -  Medium */
@@ -223,7 +223,7 @@ ORDER BY count_patient DESC, city
 
 SELECT first_name, last_name, 'Patient' AS role 
 FROM patients
-union all
+UNION ALL
 SELECT first_name, last_name, 'Doctor' 
 FROM doctors;
 
@@ -269,7 +269,7 @@ HAVING SUM(height) > 7000
 
 SELECT MAX(weight) - MIN(weight) AS weight_diff
 FROM patients
-WHERE last_name like '%Maroni'
+WHERE last_name LIKE '%Maroni'
 
 
 /* Question Set32 -  Medium */
@@ -296,7 +296,7 @@ LIMIT 1
 
 SELECT patient_id,attending_doctor_id,diagnosis
 FROM admissions
-WHERE ((patient_id%2) is not 0 AND (attending_doctor_id = 1 or 
+WHERE ((patient_id%2) IS NOT 0 AND (attending_doctor_id = 1 or 
                                     attending_doctor_id = 5 or 
                                     attending_doctor_id = 19)) 
                                     OR 
@@ -390,9 +390,9 @@ FROM patients
 SELECT patient_id, first_name, last_name
 FROM patients
 WHERE patient_id NOT IN 
-	(SELECT patient_id
-     FROM admissions
-     WHERE admissions.patient_id = patients.patient_id) 
+		(SELECT patient_id
+		FROM admissions
+		WHERE admissions.patient_id = patients.patient_id) 
 
 
 /* Question Set42 -  Hard */
@@ -485,6 +485,14 @@ HAVING CASE WHEN SUM(gender = 'M') > SUM(gender = 'F') THEN 1 ELSE 0 END
 /*  - Their patient_id is an odd number  */
 /*  - They are from the city 'Kingston'  */
 
+SELECT *
+FROM patients AS p1
+WHERE 	month(birth_date) IN (2, 5, 12) AND
+	gender = 'F' AND
+        weight BETWEEN 60 AND 80 AND
+        (patient_id%2) IS NOT 0 AND
+        first_name LIKE '__r%' AND
+        city = 'Kingston'
 
 
 /* Question Set49 -  Hard */
