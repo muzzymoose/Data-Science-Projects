@@ -7,7 +7,6 @@ Source : https://www.sql-practice.com/
 
 ## Database and Tools
 * Postgre SQL
-* PgAdmin4
 
 Schema- Hospital Database <br>  
 ![HospitalDatabaseSchema](https://github.com/muzzymoose/Data-Science-Projects/blob/main/Hospital%20Database/hostpitalschemas.png?raw=true)
