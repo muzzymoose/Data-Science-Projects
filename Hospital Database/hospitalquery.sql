@@ -498,21 +498,47 @@ WHERE 	month(birth_date) IN (2, 5, 12) AND
 /* Question Set49 -  Hard */
 /* Q49: Show the percent of patients that have 'M' as their gender. Round the answer to the nearest hundreth number and in percent form.  */
 
+SELECT CONCAT(
+  ROUND(SUM(gender = 'M')/CAST(COUNT(gender) AS float)*100,2),
+  '%') AS percent_of_male_patients
+FROM patients
 
 
 /* Question Set50 -  Hard */
 /* Q50: For each day display the total amount of admissions on that day. Display the amount changed from the previous date.  */
 
+SELECT 	admission_date, 
+	COUNT(admission_date) AS admission_day,
+        COUNT(admission_date) - LAG(COUNT(admission_date)) OVER(ORDER BY admission_date ASC) AS prev_day
+FROM admissions
+GROUP BY admission_date
+ORDER BY admission_date ASC
 
 
 /* Question Set51 -  Hard */
 /* Q51: Sort the province names in ascending order in such a way that the province 'Ontario' is always on top.  */
 
+SELECT 	province_name		
+FROM province_names
+GROUP BY province_name
+ORDER BY (CASE WHEN province_name = 'Ontario' THEN 0 ELSE 1 END)
 
 
 /* Question Set52 -  Hard */
 /* Q52: We need a breakdown for the total amount of admissions each doctor has started each year. Show the doctor_id, doctor_full_name, specialty, year, total_admissions for that year.  */
 
-
+SELECT 
+	(SELECT doctor_id
+	FROM doctors AS d
+	WHERE d.doctor_id = a.attending_doctor_id) AS doctors_id,
+	(SELECT CONCAT(first_name,' ',last_name)
+	FROM doctors AS d
+	WHERE d.doctor_id = a.attending_doctor_id) AS doctor_fullname,
+	(SELECT specialty
+	FROM doctors AS d
+	WHERE d.doctor_id = a.attending_doctor_id) AS doc_specialty,
+	YEAR(admission_date), COUNT(admission_date)
+FROM admissions AS a 
+GROUP BY attending_doctor_id, YEAR(admission_date)
 
 
