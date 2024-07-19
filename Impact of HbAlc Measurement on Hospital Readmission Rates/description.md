@@ -9,6 +9,10 @@ Data Structure & Objectives
 --------
 The dataset contains a total of 101,763 samples combined both male and female from different races. Out of all the samples, only 17,018 samples contain HbAlc measurement. 15,388 of the samples are unique patients. We are going to be using those 17,018 samples that contain HbAlc measurement to create models to do predictions on samples that do not contain HbAlc measurement. In this EDA, the HbAlc level measured in % is labelled as normal (<7%), >7% and >8%. The readmission rate is labelled as "No readmission", "Readmitted in <30 days" and "Readmitted in >30 days". Because we are predicting labelled data and not continous data, we are going to be using supervised learning (classification) type of models.
 
+Choosing the right model
+--------
+To simplify this EDA, instead of predicting readmission rate as "No readmission", "Readmitted in <30 days" or "Readmitted in >30 days", we are only going to predict whether the patient will be readmitted or not. Using simple binary outcome, we can use Logistic Regression, kNN, Naived Bayes and SVM models as our prediction model. Setting readmitted = 1, no readmission = 0.
+
 Features
 --------
 
