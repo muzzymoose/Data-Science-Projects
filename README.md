@@ -33,4 +33,7 @@ Welcome to my Data Science Projects Repository! This repository contains a colle
         - Naived Bayes, accuracy : 72%
         - Logistic Regression, accuracy : 78%
         - Support Vector Machines, accuracy : 86%
- 
+ 6. **(Python)** [EDA - Impact of HbAlc Measurement on Hospital Readmission Rates](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Impact%20of%20HbAlc%20Measurement%20on%20Hospital%20Readmission%20Rates)
+   - **Description:** Study the relationship between patients HbAlc levels with readmission rates
+   - **Technologies Used:** The notebooks uses Chi Squared hypothesis test to see the correlation
+   - **Results:** Pvalue = 0.002 (<0.05 there is significant difference H0 hypothesis rejected)
