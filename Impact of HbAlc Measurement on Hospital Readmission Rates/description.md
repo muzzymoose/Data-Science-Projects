@@ -1,16 +1,16 @@
 # Exploratory Data Analysis on Impact of HbAlc Measurement on Hospital Readmission Rates
 ![](https://www.dietvsdisease.org/wp-content/uploads/2017/12/hba1c-diabetes-control-chart.jpg)
 
-Objectives
---------
-Main purpose of this EDA is to study the impact of HbAlc measurement on Hospital Readmission rate. Next is to see how other variables affect the HbAlc measurements.
+## Tools
+* Programming tool : Python
+* Packages : pandas, numpy, seaborn, scipy, matplotlib, scikit.learn
 
-Variables
+Data Structure & Objectives
 --------
-The dataset contains a total of 101,763 data combined both male and female from different races. Together with the dataset there are other information that could affect the patients HbAlc. Each parameter is analysed carefully to see the relationships. Questions are raised to carry out further analysis
+The dataset contains a total of 101,763 samples combined both male and female from different races. Out of all the samples, only 17,018 samples contain HbAlc measurement. 15,388 of the samples are unique patients. We are going to be using those 17,018 samples that contain HbAlc measurement to create models to do predictions on samples that do not contain HbAlc measurement. In this EDA, the HbAlc level measured in % is labelled as normal (<7%), >7% and >8%. The readmission rate is labelled as "No readmission", "Readmitted in <30 days" and "Readmitted in >30 days". Because we are predicting labelled data and not continous data, we are going to be using supervised learning (classification) type of models.
 
-* How many distinct patients in the dataset? How many of them are male and female? Out of all patients. How many of them were readmitted? and classify them by race, gender and age
-<br>
+Features
+--------
 
 |Feature name |	Type	|Description	|
 |-------------|---------|---------------|
@@ -31,14 +31,15 @@ The dataset contains a total of 101,763 data combined both male and female from 
 |Readmitted|	Nominal	| Days to inpatient readmission. Values: “<30” if the patient was readmitted in less than 30 days, “>30” if the patient was readmitted in more than 30 days, and “No” for no record of readmission.	|
 <br>
 
-## Tools
-* Programming tool : Python
-* Packages : pandas, numpy, seaborn, scipy, matplotlib
 
-## Main Tasks
-(1) Clean improper data format / irrelevant data using pandas <br>
-(2) Explore data using Exploratory Data Analysis <br>
-(3) Identify the relationship between HbAlc measurement levels of patient with readmission rates <br>
+
+### Data Understanding
+The main purpose of this EDA is to study the impact of HbAlc measurement on Hospital Readmission rate. Next is to see how other features affect the HbAlc measurements. Each feature is analysed carefully to see the relationships with each other. Questions are raised to carry out further analysis
+
+* How many distinct patients in the dataset? How many of them are male and female? Out of all patients. How many of them were readmitted? and classify them by race, gender and age
+* 
+<br>
+
 
 
 
