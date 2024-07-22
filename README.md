@@ -12,20 +12,26 @@ Welcome to my Data Science Projects Repository! This repository contains a colle
 1. **(PostgreSQL)** [Hospital Database Analysis](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Hospital%20Database)
     - **Description:** Analyzing patients' and doctors' information from a Hospital database
     - **Question/Query Complexity:** 16 Easy questions -> 25 Medium questions -> 11 Hard questions
-    - **Results:** All results obtained successfully 
-2. **(Python)** [Analyzing Students' Mental Health](https://github.com/muzzymoose/Data-Science-Projects/tree/0959aac46c89ab25ee65551d7b84dfcb22a27cdb/Analyzing-Student-Mental-Health)
+    - **Results:** All results obtained successfully
+2. **(Python)** [Analyzing Seoul Bike Sharing with Linear Regression and Neural Network Regression](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Analyzing%20Seoul%20Bike%20Sharing%20Demand%20using%20Linear%20Regression)
+   - **Description:** Comparing two different regression models' predictions
+   - **Technologies Used:** The notebooks uses Linear Regression and Neural Network Regression
+   - **Results:** The Mean squared error obtained
+        - Linear Regression MSE : 98015.63
+        - Neural Network Regression MSE : 223514.49
+3. **(Python)** [Analyzing Students' Mental Health](https://github.com/muzzymoose/Data-Science-Projects/tree/0959aac46c89ab25ee65551d7b84dfcb22a27cdb/Analyzing-Student-Mental-Health)
    - **Description:** The impact of duration stay to students' mental health
    - **Technologies Used:** The notebooks uses Decision Tree Classification and Logistic Regression
    - **Results:** On-going project
-3. **(Python)** [Customer Training (data cleaning)](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Customer%20Train%20(data%20cleaning))
+4. **(Python)** [Customer Training (data cleaning)](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Customer%20Train%20(data%20cleaning))
    - **Description:** Perform data cleaning from a large dataset using python3
    - **Technologies Used:** The notebooks uses pandas
    - **Results:** Successfully cleaned data using python3
-4. **(Python)** [Dr. Semmelweis and the Discovery of Handwashing](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Dr.%20Semmelweis%20and%20the%20Discovery%20of%20Handwashing)
+5. **(Python)** [Dr. Semmelweis and the Discovery of Handwashing](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Dr.%20Semmelweis%20and%20the%20Discovery%20of%20Handwashing)
    - **Description:** Impact of washing hands in preventing birth fever disease
    - **Technologies Used:** The notebooks uses pandas, matplotlib and bootstrap analysis
    - **Results:** Washing hands before attending women giving birth reduces birth fever disease 
-5. **(Python)** [Understanding 5 Different Machine Learning Models](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Understanding%205%20Different%20Machine%20Learning%20Models)
+6. **(Python)** [Understanding 5 Different Machine Learning Models](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Understanding%205%20Different%20Machine%20Learning%20Models)
    - **Description:** Comparing accuracy, precision and recall results of various machine learning models
    - **Technologies Used:** The notebooks uses kNN, Naived Bayes, Logistic Regression, Support Vector Machines & Neural Network
    - **Results:** Probability of particle emitted by radiation contain particle Gamma = 1, Hadron = 0 <br>
@@ -34,7 +40,7 @@ Welcome to my Data Science Projects Repository! This repository contains a colle
         - Logistic Regression, accuracy : 78%
         - Support Vector Machines, accuracy : 86%
         - Neural Network, accuracy : 87%
-6. **(Python)** [EDA - Impact of HbAlc Measurement on Hospital Readmission Rates](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Impact%20of%20HbAlc%20Measurement%20on%20Hospital%20Readmission%20Rates)
+7. **(Python)** [EDA - Impact of HbAlc Measurement on Hospital Readmission Rates](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Impact%20of%20HbAlc%20Measurement%20on%20Hospital%20Readmission%20Rates)
     - **Description:** Study the relationship between patients HbAlc levels with readmission rates
     - **Technologies Used:** The notebooks uses Chi Squared hypothesis test to see the correlation
     - **Results:** Pvalue = 0.002 (<0.05 there is significant difference H0 hypothesis rejected). HbAlc levels affect readmission rates.
