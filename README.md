@@ -25,14 +25,15 @@ Welcome to my Data Science Projects Repository! This repository contains a colle
    - **Description:** Impact of washing hands in preventing birth fever disease
    - **Technologies Used:** The notebooks uses pandas, matplotlib and bootstrap analysis
    - **Results:** Washing hands before attending women giving birth reduces birth fever disease 
-5. **(Python)** [Understanding 4 different machine learning models](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Understanding%204%20different%20models%20in%20machine%20learning)
+5. **(Python)** [Understanding 5 Different Machine Learning Models](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Understanding%205%20Different%20Machine%20Learning%20Models)
    - **Description:** Comparing accuracy, precision and recall results of various machine learning models
-   - **Technologies Used:** The notebooks uses kNN, Naived Bayes, Logistic Regression and Support Vector Machines
+   - **Technologies Used:** The notebooks uses kNN, Naived Bayes, Logistic Regression, Support Vector Machines & Neural Network
    - **Results:** Probability of particle emitted by radiation contain particle Gamma = 1, Hadron = 0 <br>
         - kNN, accuracy : 81%
         - Naived Bayes, accuracy : 72%
         - Logistic Regression, accuracy : 78%
         - Support Vector Machines, accuracy : 86%
+        - Neural Network, accuracy : 87%
 6. **(Python)** [EDA - Impact of HbAlc Measurement on Hospital Readmission Rates](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Impact%20of%20HbAlc%20Measurement%20on%20Hospital%20Readmission%20Rates)
     - **Description:** Study the relationship between patients HbAlc levels with readmission rates
     - **Technologies Used:** The notebooks uses Chi Squared hypothesis test to see the correlation
