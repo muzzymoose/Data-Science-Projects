@@ -25,3 +25,7 @@ Integer, Real
 
 ## Features
 13
+
+## Results Obtained
+![](https://github.com/muzzymoose/Data-Science-Projects/blob/main/Analyzing%20Seoul%20Bike%20Sharing%20Demand%20using%20Linear%20Regression/Linreg%20vs%20nnreg.png)
+<br>
