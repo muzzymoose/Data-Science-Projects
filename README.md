@@ -49,5 +49,3 @@ Welcome to my Data Science Projects Repository! This repository contains a colle
     - **Technologies Used:** The notebooks uses multiple linear regression by OLS
     - **Results:** R2 = 0.749
    
- 
-https://github.com/muzzymoose/Data-Science-Projects/tree/main/EDA%20%26%20ML%20predictions%20on%20Medical%20Cost%20Billed%20by%20Health%20Insurance
