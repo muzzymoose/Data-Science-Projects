@@ -44,3 +44,10 @@ Welcome to my Data Science Projects Repository! This repository contains a colle
     - **Description:** Study the relationship between patients HbAlc levels with readmission rates
     - **Technologies Used:** The notebooks uses Chi Squared hypothesis test to see the correlation
     - **Results:** Pvalue = 0.002 (<0.05 there is significant difference H0 hypothesis rejected). HbAlc levels affect readmission rates.
+ 8. **(Python)** [EDA & ML Predictions on Medical Bills Charged by Health Insurance](https://github.com/muzzymoose/Data-Science-Projects/tree/main/EDA%20%26%20ML%20predictions%20on%20Medical%20Cost%20Billed%20by%20Health%20Insurance)
+    - **Description:** Deep EDA and ML predictions using multiple linear regression
+    - **Technologies Used:** The notebooks uses multiple linear regression by OLS
+    - **Results:** R2 = 0.749
+   
+ 
+https://github.com/muzzymoose/Data-Science-Projects/tree/main/EDA%20%26%20ML%20predictions%20on%20Medical%20Cost%20Billed%20by%20Health%20Insurance
