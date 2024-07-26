@@ -21,3 +21,6 @@ Source : https://www.kaggle.com/datasets/mirichoi0218/insurance
 |charges|Target	| numerical	| individual medical cost billed by health insurance| years	|no|
 
 Refer to .pynb file in this repos for more info
+
+## Summary Results
+[](https://apicms.thestar.com.my/uploads/images/2024/02/14/thumbs/550/2530329.webp)
