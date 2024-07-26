@@ -23,4 +23,4 @@ Source : https://www.kaggle.com/datasets/mirichoi0218/insurance
 Refer to .pynb file in this repos for more info
 
 ## Summary Results
-[](https://github.com/muzzymoose/Data-Science-Projects/blob/main/EDA%20&%20ML%20predictions%20on%20Medical%20Cost%20Billed%20by%20Health%20Insurance/regressioncomparison.png?raw=true)
+![](https://github.com/muzzymoose/Data-Science-Projects/blob/main/EDA%20&%20ML%20predictions%20on%20Medical%20Cost%20Billed%20by%20Health%20Insurance/regressioncomparison.png?raw=true)
