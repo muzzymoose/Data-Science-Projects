@@ -23,7 +23,7 @@ Welcome to my Data Science Projects Repository! This repository contains a colle
    - **Technologies Used:** The notebooks uses Linear Regression and Neural Network Regression
    - **Results:** The Mean squared error obtained
         - Linear Regression RMSE : 313 bikes
-        - Neural Network Regression MSE : 473 bikes
+        - Neural Network Regression RMSE : 473 bikes
 4. **(Python)** [Analyzing Students' Mental Health](https://github.com/muzzymoose/Data-Science-Projects/tree/0959aac46c89ab25ee65551d7b84dfcb22a27cdb/Analyzing-Student-Mental-Health)
    - **Description:** The impact of duration stay to students' mental health
    - **Technologies Used:** The notebooks uses Decision Tree Classification and Logistic Regression
