@@ -8,5 +8,5 @@ Source : https://www.sql-practice.com/
 ## Database and Tools
 * Postgre SQL
 
-Schema- Hospital Database <br>  
-![HospitalDatabaseSchema](https://github.com/muzzymoose/Data-Science-Projects/blob/main/Hospital%20Database/hostpitalschemas.png?raw=true)
+Schema- Northwind Database <br>  
+![HospitalDatabaseSchema](https://github.com/muzzymoose/Data-Science-Projects/blob/main/Northwind%20Shipment%20Database%20Analysis/northwind%20schemas.png?raw=true)
