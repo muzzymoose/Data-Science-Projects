@@ -28,19 +28,15 @@ Welcome to my Data Science Projects Repository! This repository contains a colle
    - **Results:** The Mean squared error obtained
         - Linear Regression RMSE : 313 bikes
         - Neural Network Regression RMSE : 473 bikes
-5. **(Python)** [Analyzing Students' Mental Health](https://github.com/muzzymoose/Data-Science-Projects/tree/0959aac46c89ab25ee65551d7b84dfcb22a27cdb/Analyzing-Student-Mental-Health)
-   - **Description:** The impact of duration stay to students' mental health
-   - **Technologies Used:** The notebooks uses Decision Tree Classification and Logistic Regression
-   - **Results:** On-going project
-6. **(Python)** [Customer Training (data cleaning)](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Customer%20Train%20(data%20cleaning))
+5. **(Python)** [Customer Training (data cleaning)](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Customer%20Train%20(data%20cleaning))
    - **Description:** Perform data cleaning from a large dataset using python3
    - **Technologies Used:** The notebooks uses pandas
    - **Results:** Successfully cleaned data using python3
-7. **(Python)** [Exploratory Data Analysis on Pizza Restaurant Sales](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Deep%20EDA%20on%20Pizza%20Restaurant%20Sales)
+6. **(Python)** [Exploratory Data Analysis on Pizza Restaurant Sales](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Deep%20EDA%20on%20Pizza%20Restaurant%20Sales)
    - **Description:** Deep EDA and answering business questions from Restaurant Manager
    - **Technologies Used:** The notebooks uses univariate and multivariate analysis
    - **Results:** All 5 business questions answered. 
-8. **(Python)** [Understanding 5 Different Machine Learning Models](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Understanding%205%20Different%20Machine%20Learning%20Models)
+7. **(Python)** [Understanding 5 Different Machine Learning Models](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Understanding%205%20Different%20Machine%20Learning%20Models)
    - **Description:** Comparing accuracy, precision and recall results of various machine learning models
    - **Technologies Used:** The notebooks uses kNN, Naived Bayes, Logistic Regression, Support Vector Machines & Neural Network
    - **Results:** Probability of particle emitted by radiation contain particle Gamma = 1, Hadron = 0 <br>
@@ -49,7 +45,7 @@ Welcome to my Data Science Projects Repository! This repository contains a colle
         - Logistic Regression, accuracy : 78%
         - Support Vector Machines, accuracy : 86%
         - Neural Network, accuracy : 87%
-9. **(Python)** [EDA - Impact of HbAlc Measurement on Hospital Readmission Rates](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Impact%20of%20HbAlc%20Measurement%20on%20Hospital%20Readmission%20Rates)
+8. **(Python)** [EDA - Impact of HbAlc Measurement on Hospital Readmission Rates](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Impact%20of%20HbAlc%20Measurement%20on%20Hospital%20Readmission%20Rates)
     - **Description:** Study the relationship between patients HbAlc levels with readmission rates
     - **Technologies Used:** The notebooks uses Chi Squared hypothesis test to see the correlation
     - **Results:** Pvalue = 0.002 (<0.05 there is significant difference H0 hypothesis rejected). HbAlc levels affect readmission rates.
