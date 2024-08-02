@@ -36,10 +36,10 @@ Welcome to my Data Science Projects Repository! This repository contains a colle
    - **Description:** Perform data cleaning from a large dataset using python3
    - **Technologies Used:** The notebooks uses pandas
    - **Results:** Successfully cleaned data using python3
-7. **(Python)** [Dr. Semmelweis and the Discovery of Handwashing](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Dr.%20Semmelweis%20and%20the%20Discovery%20of%20Handwashing)
-   - **Description:** Impact of washing hands in preventing birth fever disease
-   - **Technologies Used:** The notebooks uses pandas, matplotlib and bootstrap analysis
-   - **Results:** Washing hands before attending women giving birth reduces birth fever disease 
+7. **(Python)** [Exploratory Data Analysis on Pizza Restaurant Sales](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Deep%20EDA%20on%20Pizza%20Restaurant%20Sales)
+   - **Description:** Deep EDA and answering business questions from Restaurant Manager
+   - **Technologies Used:** The notebooks uses univariate and multivariate analysis
+   - **Results:** All 5 business questions answered. 
 8. **(Python)** [Understanding 5 Different Machine Learning Models](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Understanding%205%20Different%20Machine%20Learning%20Models)
    - **Description:** Comparing accuracy, precision and recall results of various machine learning models
    - **Technologies Used:** The notebooks uses kNN, Naived Bayes, Logistic Regression, Support Vector Machines & Neural Network
