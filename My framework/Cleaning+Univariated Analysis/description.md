@@ -1,4 +1,4 @@
-# Step 1 : Data Understanding
+# Step 1 : Data Understanding 
 ***
 > - Dataframe `shape` <br>
 > - `head` and `tail` <br>
@@ -22,7 +22,7 @@
 
 # Step 4 : Feature Relationships
 ***
-(Univariate Analysis)
+(Multivariate Analysis)
 >> - Scatterplot <br>
 >> - Heatmap Correlation <br>
 >> - Pairplot <br>
