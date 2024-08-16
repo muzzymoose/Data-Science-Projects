@@ -2,8 +2,8 @@
 ![](https://www.btelligent.com/fileadmin/_processed_/7/0/csm_data-science-ansatz_ddef991d7d.jpg)
 Welcome to my Data Science Projects Repository! This repository contains a collection of my data science projects, showcasing my skills and expertise in the field. Each project demonstrates different aspects of data analysis, machine learning, and visualization. Along with various different tools
 
-## My Framework when doing Exploratory Data Analysis
-- [**(Python)** Cleaning data and deep univariated analysis](https://github.com/muzzymoose/Data-Science-Projects/tree/main/My%20framework/Cleaning%2BUnivariated%20Analysis)
+## My Framework
+- [**(Python)** Exploratory Data Analysis](https://github.com/muzzymoose/Data-Science-Projects/tree/main/My%20framework/Cleaning%2BUnivariated%20Analysis)
  
 ### GitHub Page 
 [![Data-Science-Projects](https://img.shields.io/badge/Data_Science_Projects-GitHub_Page-%2300BFFF.svg)](https://github.com/muzzymoose/Data-Science-Projects)
