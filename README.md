@@ -45,4 +45,9 @@ Welcome to my Data Science Projects Repository! This repository contains a colle
         - Logistic Regression, accuracy : 78%
         - Support Vector Machines, accuracy : 86%
         - Neural Network, accuracy : 87%
+8. **(Python)** [Prediction on Company's Attrition Rate](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Prediction%20on%20Company%20Attrition%20Rate)
+   - **Description:** Deep EDA and Machine Learning on Company's Attrition Rate
+   - **Technologies Used:** The notebooks uses kNN, Naived Bayes, Logistic Regression, Support Vector Machines & Neural Network
+   - **Results:** Optimized Logistic Regression with accuracy 91%, precision 91%+. Recommendation to reduce attrition rate by 10%
+ 
 
