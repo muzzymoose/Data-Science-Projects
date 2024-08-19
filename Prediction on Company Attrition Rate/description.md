@@ -39,4 +39,4 @@ appropriate metrics. Dataset is available at project_dataset.csv
 Refer to .pynb file in this repos for more info
 
 ## Summary Results
-![](https://github.com/muzzymoose/Data-Science-Projects/blob/main/EDA%20&%20ML%20predictions%20on%20Medical%20Cost%20Billed%20by%20Health%20Insurance/regressioncomparison.png?raw=true)
+![](https://github.com/muzzymoose/Data-Science-Projects/blob/main/Prediction%20on%20Company%20Attrition%20Rate/logreg.png)
