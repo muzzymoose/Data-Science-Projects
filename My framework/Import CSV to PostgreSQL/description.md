@@ -28,3 +28,8 @@
 
 ### Step 7 - Disconnect from PostgreSQL Database
 - Using python scripts to disconnect from Database
+
+### Step 8 - Setup PK, FK, References in SQL
+- This is the only manual part
+- Use Dbvisualizer to visualize schema
+- ![](https://github.com/muzzymoose/Data-Science-Projects/blob/main/My%20framework/Import%20CSV%20to%20PostgreSQL/dbvisualizer%20schemas.png)
