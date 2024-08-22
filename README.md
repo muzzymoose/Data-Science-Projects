@@ -3,6 +3,7 @@
 Welcome to my Data Science Projects Repository! This repository contains a collection of my data science projects, showcasing my skills and expertise in the field. Each project demonstrates different aspects of data analysis, machine learning, and visualization. Along with various different tools
 
 ## My Framework
+- [**(Python)** Importing CSV files to PostgreSQL using python scripts](https://github.com/muzzymoose/Data-Science-Projects/tree/main/My%20framework/Import%20CSV%20to%20PostgreSQL)
 - [**(Python)** Exploratory Data Analysis](https://github.com/muzzymoose/Data-Science-Projects/tree/main/My%20framework/Cleaning%2BUnivariated%20Analysis)
  
 ### GitHub Page 
