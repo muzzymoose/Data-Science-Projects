@@ -50,7 +50,7 @@ Welcome to my Data Science Projects Repository! This repository contains a colle
    - **Description:** Deep EDA and Machine Learning on Company's Attrition Rate
    - **Technologies Used:** The notebooks uses kNN, Naived Bayes, Logistic Regression, Support Vector Machines & Neural Network
    - **Results:** Optimized Logistic Regression with accuracy 91%, precision 91%+. Recommendation to reduce attrition rate by 10%
-9. **(Python)** [Customer Segmentation using KMeans cluster](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Prediction%20on%20Company%20Attrition%20Rate)
+9. **(Python)** [Customer Segmentation using KMeans cluster](https://github.com/muzzymoose/Data-Science-Projects/tree/main/Customer%20Segmentation%20KMeans%20Cluster)
    - **Description:** Clustering customer based on their spending behavior (recency, frequency, monetary value)
    - **Technologies Used:** The notebooks uses KMeans cluster
    - **Results:** Cluster customers to 4 main groups, 3 outliers group. Together with actions required
