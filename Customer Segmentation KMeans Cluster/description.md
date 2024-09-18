@@ -23,4 +23,4 @@ Dataset contains information about an online retailer's customers transactions. 
 Refer to .pynb file in this repos for more info
 
 ## Summary Results
-![](https://github.com/muzzymoose/Data-Science-Projects/blob/main/Prediction%20on%20Company%20Attrition%20Rate/logreg.png)
+![](https://github.com/muzzymoose/Data-Science-Projects/blob/main/Customer%20Segmentation%20KMeans%20Cluster/segmented_cluster.png?raw=true)
