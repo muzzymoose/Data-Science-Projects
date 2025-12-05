@@ -6,6 +6,7 @@ from src.depth_estimation import DepthEstimator
 from src.voxel_generator import VoxelGenerator
 from src.block_mapper import BlockMapper
 from src.materials_summary import MaterialCounter
+from src.renderer import Open3DRenderer
 
 def main():
     parser = argparse.ArgumentParser(description="Image to Minecraft Voxelizer")
@@ -44,8 +45,21 @@ def main():
     counter = MaterialCounter()
     counter.generate_report(final_blocks, os.path.join(args.output, "materials.json"))
 
+# --- Step 6: Rendering ---
+    print("--- Step 6: Rendering Blueprints ---")
+    renderer = Open3DRenderer(output_folder=args.output)
+    
+    # Convert our raw dictionary to Open3D VoxelGrid
+    o3d_grid = renderer.voxel_dict_to_geometry(raw_voxels, voxel_size=1.0)
+    
+    # Save static images
+    renderer.render_blueprints(o3d_grid)
+    
+    # Optional: Open interactive viewer if requested
+    # You might want to add a flag: --interactive
+    # renderer.show_interactive(o3d_grid)
+
     print("--- Pipeline Complete ---")
-    print(f"Generated {len(final_blocks)} blocks.")
 
 if __name__ == "__main__":
     main()
