@@ -1,65 +1,42 @@
-import os
 import argparse
-import matplotlib.pyplot as plt
-from src.preprocess import ImagePreprocessor
-from src.depth_estimation import DepthEstimator
-from src.voxel_generator import VoxelGenerator
+import os
+from src.mesh_generator import MeshGenerator
+from src.mesh_voxelizer import MeshVoxelizer
+from src.renderer import Open3DRenderer
 from src.block_mapper import BlockMapper
 from src.materials_summary import MaterialCounter
-from src.renderer import Open3DRenderer
 
 def main():
-    parser = argparse.ArgumentParser(description="Image to Minecraft Voxelizer")
-    parser.add_argument("--image", type=str, required=True, help="Path to input image")
-    parser.add_argument("--output", type=str, default="output", help="Output folder")
-    parser.add_argument("--grid", type=int, default=64, help="Voxel grid size")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--image", type=str, required=True)
+    parser.add_argument("--grid", type=int, default=64)
     args = parser.parse_args()
-
-    os.makedirs(args.output, exist_ok=True)
-
-    # 1. Preprocess
-    print("--- Step 1: Preprocessing ---")
-    preprocessor = ImagePreprocessor()
-    pil_img, np_img = preprocessor.load_and_resize(args.image)
-
-    # 2. Depth Estimation
-    print("--- Step 2: Depth Estimation ---")
-    depth_est = DepthEstimator()
-    depth_map = depth_est.predict_depth(pil_img)
     
-    # Debug: Save depth map
-    plt.imsave(os.path.join(args.output, "debug_depth.png"), depth_map, cmap='inferno')
+    os.makedirs("output", exist_ok=True)
 
-    # 3. Voxel Generation
-    print("--- Step 3: Voxel Generation ---")
-    vox_gen = VoxelGenerator(grid_size=args.grid)
-    raw_voxels = vox_gen.generate_voxels(np_img, depth_map)
-
-    # 4. Block Mapping
-    print("--- Step 4: Block Mapping ---")
+    # 1. Generate True 3D Mesh
+    generator = MeshGenerator()
+    # This creates 'output/mesh.obj'
+    mesh_obj, mesh_path = generator.image_to_mesh(args.image, "output/mesh.obj")
+    
+    # 2. Voxelize the Mesh
+    voxelizer = MeshVoxelizer(resolution=args.grid)
+    voxel_data = voxelizer.voxelize_mesh(mesh_path)
+    
+    # 3. Map to Minecraft Blocks
     mapper = BlockMapper("assets/block_colors.json")
-    final_blocks = mapper.map_voxels_to_blocks(raw_voxels)
-
-    # 5. Materials List
-    print("--- Step 5: Materials Summary ---")
-    counter = MaterialCounter()
-    counter.generate_report(final_blocks, os.path.join(args.output, "materials.json"))
-
-# --- Step 6: Rendering ---
-    print("--- Step 6: Rendering Blueprints ---")
-    renderer = Open3DRenderer(output_folder=args.output)
+    final_blocks = mapper.map_voxels_to_blocks(voxel_data)
     
-    # Convert our raw dictionary to Open3D VoxelGrid
-    o3d_grid = renderer.voxel_dict_to_geometry(raw_voxels, voxel_size=1.0)
-    
-    # Save static images
+    # 4. Render Blueprints
+    renderer = Open3DRenderer("output")
+    o3d_grid = renderer.voxel_dict_to_geometry(voxel_data)
     renderer.render_blueprints(o3d_grid)
     
-    # Optional: Open interactive viewer if requested
-    # You might want to add a flag: --interactive
-    # renderer.show_interactive(o3d_grid)
-
-    print("--- Pipeline Complete ---")
+    # 5. Material List
+    counter = MaterialCounter()
+    counter.generate_report(final_blocks, "output/materials.json")
+    
+    print("Done! Check output/ folder.")
 
 if __name__ == "__main__":
     main()
