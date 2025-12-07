@@ -7,3 +7,4 @@ scipy
 matplotlib
 open3d
 opencv-python
+onnxruntime-gpu==1.16.3
