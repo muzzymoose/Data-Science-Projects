@@ -1,14 +1,14 @@
 {
-    "total_blocks": 6499,
+    "total_blocks": 45665,
     "materials": {
-        "white_wool": 4582,
-        "stone": 534,
-        "cobblestone": 996,
-        "leaves": 84,
-        "glass": 101,
-        "oak_planks": 7,
-        "dirt": 18,
-        "bricks": 15,
-        "oak_log": 162
+        "cobblestone": 4438,
+        "stone": 9443,
+        "dirt": 5806,
+        "bricks": 1220,
+        "oak_log": 19332,
+        "leaves": 4095,
+        "oak_planks": 458,
+        "white_wool": 322,
+        "glass": 551
     }
 }
