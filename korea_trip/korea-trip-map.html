@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korea Trip Map Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #e0f2fe 0%, #f3e8ff 100%);
+            padding: 16px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            color: #1f2937;
+            margin-bottom: 8px;
+        }
+        
+        .header p {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .upload-notice {
+            background: #fef3c7;
+            border: 2px solid #fbbf24;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+
+        .upload-notice-title {
+            font-weight: 700;
+            color: #92400e;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .upload-notice-text {
+            font-size: 14px;
+            color: #78350f;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .upload-area {
+            background: white;
+            border: 2px dashed #d97706;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 12px;
+        }
+
+        .upload-btn {
+            background: #f59e0b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .upload-btn:hover {
+            background: #d97706;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .uploaded-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .uploaded-image-preview {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 2px solid #d97706;
+        }
+
+        .uploaded-image-preview img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .uploaded-image-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 4px;
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .day-selector {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 16px;
+            margin-bottom: 24px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .day-buttons {
+            display: flex;
+            gap: 8px;
+            min-width: max-content;
+        }
+        
+        .day-btn {
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: #f3f4f6;
+            color: #374151;
+            min-width: 80px;
+        }
+        
+        .day-btn.active {
+            background: #3b82f6;
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);
+        }
+        
+        .day-label {
+            font-size: 10px;
+            opacity: 0.75;
+        }
+        
+        .day-date {
+            font-size: 14px;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+        
+        @media (min-width: 1024px) {
+            .main-content {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 24px;
+        }
+        
+        .card h2, .card h3 {
+            color: #1f2937;
+            margin-bottom: 16px;
+        }
+        
+        .card h2 {
+            font-size: 20px;
+        }
+        
+        .card h3 {
+            font-size: 18px;
+        }
+        
+        .map-container {
+            background-color: #f3f4f6;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 12px;
+            border: 2px solid #e5e7eb;
+            padding: 16px;
+            position: relative;
+            height: 500px;
+            margin-bottom: 16px;
+        }
+        
+        .map-svg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        
+        .location-marker {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            animation: markerPop 0.3s ease-out;
+        }
+
+        @keyframes markerPop {
+            0% { transform: translate(-50%, -50%) scale(0); }
+            50% { transform: translate(-50%, -50%) scale(1.2); }
+            100% { transform: translate(-50%, -50%) scale(1); }
+        }
+        
+        .marker-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            position: relative;
+            border: 3px solid white;
+        }
+        
+        .marker-icon::before {
+            content: '📍';
+            font-size: 20px;
+        }
+        
+        .marker-label {
+            position: absolute;
+            top: 100%;
+            margin-top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            background: rgba(255,255,255,0.95);
+            padding: 6px 12px;
+            border-radius: 999px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            font-size: 11px;
+            font-weight: 700;
+            border: 2px solid #e5e7eb;
+        }
+        
+        .region-label {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: rgba(255,255,255,0.95);
+            padding: 12px 16px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            z-index: 5;
+            border: 2px solid #e5e7eb;
+        }
+        
+        .region-label-title {
+            font-size: 10px;
+            color: #6b7280;
+            margin-bottom: 4px;
+        }
+        
+        .region-label-text {
+            font-weight: 700;
+            color: #1f2937;
+        }
+        
+        .stats-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+        }
+        
+        .stat-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+        
+        .stat-value {
+            font-weight: 600;
+        }
+        
+        .stat-divider {
+            border-top: 1px solid #e5e7eb;
+            padding-top: 12px;
+            margin-top: 12px;
+        }
+        
+        .route-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .route-item {
+            display: flex;
+            gap: 12px;
+        }
+        
+        .route-number {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+        
+        .route-details {
+            flex-grow: 1;
+        }
+        
+        .route-name {
+            font-weight: 600;
+            color: #1f2937;
+        }
+        
+        .route-type {
+            font-size: 12px;
+            color: #6b7280;
+            text-transform: capitalize;
+        }
+        
+        .route-transport {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 4px;
+            font-size: 12px;
+            color: #6b7280;
+        }
+        
+        .legend-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+        
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+        
+        @media (min-width: 768px) {
+            .overview-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        .overview-card {
+            text-align: center;
+            padding: 16px;
+            border-radius: 8px;
+        }
+        
+        .overview-value {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        
+        .overview-label {
+            font-size: 12px;
+            color: #6b7280;
+        }
+        
+        .bg-blue { background: #3b82f6; }
+        .bg-purple { background: #a855f7; }
+        .bg-green { background: #22c55e; }
+        .bg-yellow { background: #eab308; }
+        .bg-pink { background: #ec4899; }
+        .bg-orange { background: #f97316; }
+        
+        .bg-blue-50 { background: #eff6ff; }
+        .bg-green-50 { background: #f0fdf4; }
+        .bg-yellow-50 { background: #fefce8; }
+        .bg-purple-50 { background: #faf5ff; }
+        
+        .text-blue { color: #3b82f6; }
+        .text-green { color: #22c55e; }
+        .text-yellow { color: #eab308; }
+        .text-purple { color: #a855f7; }
+        
+        .route-line {
+            stroke-width: 4;
+            opacity: 0.8;
+            fill: none;
+        }
+        
+        .route-car { stroke: #3b82f6; }
+        .route-subway { stroke: #22c55e; }
+        .route-walk { stroke: #eab308; stroke-dasharray: 5,5; }
+        .route-bus { stroke: #a855f7; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🇰🇷 Korea Family Trip Dashboard</h1>
+            <p>Dec 19-27, 2024 • 9 Days • Real Map View</p>
+        </div>
+
+        <!-- Upload Notice -->
+        <div class="upload-notice">
+            <div class="upload-notice-title">🗺️ Add Your Map Screenshots!</div>
+            <div class="upload-notice-text">
+                Upload your 4 Google Maps screenshots to see them as backgrounds behind the route pins. The maps will automatically match to the correct days based on the regions shown.
+            </div>
+            <div class="upload-area">
+                <input type="file" id="mapUpload" class="file-input" accept="image/*" multiple>
+                <button class="upload-btn" onclick="document.getElementById('mapUpload').click()">📤 Upload Map Images</button>
+                <div style="font-size: 12px; color: #78350f; margin-top: 8px;">
+                    Upload 4 images: Ski Resort area, Wide Korea view, Incheon-Gangwon, Seoul detail
+                </div>
+            </div>
+            <div class="uploaded-images" id="uploadedImages"></div>
+        </div>
+        
+        <!-- Day Selector -->
+        <div class="day-selector">
+            <div class="day-buttons" id="dayButtons"></div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Map -->
+            <div>
+                <div class="card">
+                    <h2 id="dayTitle">Day 0: Departure</h2>
+                    <div class="map-container" id="mapContainer">
+                        <svg class="map-svg" id="mapSvg"></svg>
+                        <div id="locations"></div>
+                        <div class="region-label">
+                            <div class="region-label-title">Region</div>
+                            <div class="region-label-text" id="regionText">Malaysia → Korea</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <div>
+                <!-- Stats -->
+                <div class="card" style="margin-bottom: 24px;">
+                    <h3>⏱️ Travel Stats</h3>
+                    <div class="stats-grid">
+                        <div class="stat-row">
+                            <div class="stat-label">
+                                <span>🚗</span>
+                                <span>Driving</span>
+                            </div>
+                            <span class="stat-value" id="statDriving">0km</span>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-label">
+                                <span>🚇</span>
+                                <span>Subway</span>
+                            </div>
+                            <span class="stat-value" id="statSubway">0m</span>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-label">
+                                <span>🚶</span>
+                                <span>Walking</span>
+                            </div>
+                            <span class="stat-value" id="statWalking">0km</span>
+                        </div>
+                        <div class="stat-row stat-divider">
+                            <span style="font-weight: 600;">Total Travel</span>
+                            <span class="stat-value text-blue" id="statTotal">Flight</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Route Details -->
+                <div class="card" style="margin-bottom: 24px;">
+                    <h3>Route Details</h3>
+                    <div class="route-list" id="routeList"></div>
+                </div>
+                
+                <!-- Legend -->
+                <div class="card">
+                    <h3>Legend</h3>
+                    <div class="legend-grid">
+                        <div class="legend-item">
+                            <div class="legend-color bg-blue"></div>
+                            <span>Home/Accommodation</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color bg-purple"></div>
+                            <span>Airport</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color bg-green"></div>
+                            <span>Resort</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color bg-yellow"></div>
+                            <span>Attraction</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color bg-pink"></div>
+                            <span>Shopping</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color bg-orange"></div>
+                            <span>Food/Café</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Trip Overview -->
+        <div class="card" style="margin-top: 24px;">
+            <h2>Trip Overview</h2>
+            <div class="overview-grid">
+                <div class="overview-card bg-blue-50">
+                    <div class="overview-value text-blue">9</div>
+                    <div class="overview-label">Days</div>
+                </div>
+                <div class="overview-card bg-green-50">
+                    <div class="overview-value text-green">~450km</div>
+                    <div class="overview-label">Total Driving</div>
+                </div>
+                <div class="overview-card bg-yellow-50">
+                    <div class="overview-value text-yellow">~10km</div>
+                    <div class="overview-label">Total Walking</div>
+                </div>
+                <div class="overview-card bg-purple-50">
+                    <div class="overview-value text-purple">3h</div>
+                    <div class="overview-label">Total Subway</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const uploadedMapImages = {
+            skiResort: null,
+            wideKorea: null,
+            incheonGangwon: null,
+            seoulDetail: null
+        };
+
+        // Handle map image uploads
+        document.getElementById('mapUpload').addEventListener('change', function(e) {
+            const files = Array.from(e.target.files);
+            const previewContainer = document.getElementById('uploadedImages');
+            
+            files.forEach((file, index) => {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    const mapKey = ['skiResort', 'wideKorea', 'incheonGangwon', 'seoulDetail'][index] || 'wideKorea';
+                    uploadedMapImages[mapKey] = event.target.result;
+                    
+                    const previewDiv = document.createElement('div');
+                    previewDiv.className = 'uploaded-image-preview';
+                    previewDiv.innerHTML = `
+                        <img src="${event.target.result}" alt="Map ${index + 1}">
+                        <div class="uploaded-image-label">Map ${index + 1}</div>
+                    `;
+                    previewContainer.appendChild(previewDiv);
+                    
+                    // Re-render current day with new map
+                    renderDay();
+                };
+                reader.readAsDataURL(file);
+            });
+        });
+
+        const days = [
+            {
+                day: 0,
+                date: "Dec 19",
+                title: "Departure",
+                mapType: null,
+                locations: [
+                    { name: "KLIA", type: "airport", position: { x: 50, y: 50 } }
+                ],
+                routes: [],
+                stats: { driving: 0, subway: 0, walking: 0, total: "Flight" },
+                region: "Malaysia → Korea"
+            },
+            {
+                day: 1,
+                date: "Dec 20",
+                title: "Arrival & Ski Resort",
+                mapType: 'incheonGangwon',
+                locations: [
+                    { name: "Incheon Airport", type: "airport", position: { x: 20, y: 55 } },
+                    { name: "Ski Resort (Gangwon-do)", type: "resort", position: { x: 85, y: 25 } }
+                ],
+                routes: [
+                    { from: 0, to: 1, type: "car", duration: "2.5h" }
+                ],
+                stats: { driving: 150, subway: 0, walking: 1, total: "2.5h drive" },
+                region: "Incheon → Gangwon-do"
+            },
+            {
+                day: 2,
+                date: "Dec 21",
+                title: "Full Ski Day",
+                mapType: 'skiResort',
+                locations: [
+                    { name: "Ski Resort", type: "resort", position: { x: 50, y: 50 } }
+                ],
+                routes: [],
+                stats: { driving: 0, subway: 0, walking: 2, total: "Resort only" },
+                region: "Ski Resort"
+            },
+            {
+                day: 3,
+                date: "Dec 22",
+                title: "Resort Activities",
+                mapType: 'skiResort',
+                locations: [
+                    { name: "Ski Resort", type: "resort", position: { x: 50, y: 50 } }
+                ],
+                routes: [],
+                stats: { driving: 0, subway: 0, walking: 2, total: "Resort only" },
+                region: "Ski Resort"
+            },
+            {
+                day: 4,
+                date: "Dec 23",
+                title: "Nami Island → Seoul",
+                mapType: 'wideKorea',
+                locations: [
+                    { name: "Ski Resort", type: "resort", position: { x: 85, y: 25 } },
+                    { name: "Nami Island", type: "attraction", position: { x: 65, y: 32 } },
+                    { name: "Seoul Airbnb (Anguk)", type: "home", position: { x: 30, y: 55 } }
+                ],
+                routes: [
+                    { from: 0, to: 1, type: "car", duration: "1.5-2h" },
+                    { from: 1, to: 2, type: "car", duration: "1.5-2h" }
+                ],
+                stats: { driving: 200, subway: 0, walking: 3, total: "4h drive + 4h Nami" },
+                region: "Gangwon → Gapyeong → Seoul"
+            },
+            {
+                day: 5,
+                date: "Dec 24",
+                title: "Seoul Cultural Day",
+                mapType: 'seoulDetail',
+                locations: [
+                    { name: "Anguk Airbnb", type: "home", position: { x: 52, y: 38 } },
+                    { name: "Café Onion", type: "food", position: { x: 53, y: 39 } },
+                    { name: "Gyeongbokgung", type: "attraction", position: { x: 48, y: 40 } },
+                    { name: "Bukchon", type: "attraction", position: { x: 54, y: 41 } },
+                    { name: "Insadong", type: "shopping", position: { x: 56, y: 43 } },
+                    { name: "Ikseondong", type: "attraction", position: { x: 58, y: 45 } },
+                    { name: "Myeongdong", type: "shopping", position: { x: 52, y: 52 } },
+                    { name: "Cheonggyecheon", type: "attraction", position: { x: 55, y: 54 } }
+                ],
+                routes: [
+                    { from: 0, to: 1, type: "walk", duration: "2m" },
+                    { from: 1, to: 2, type: "walk", duration: "15m" },
+                    { from: 2, to: 3, type: "walk", duration: "10m" },
+                    { from: 3, to: 4, type: "walk", duration: "10m" },
+                    { from: 4, to: 5, type: "walk", duration: "12m" },
+                    { from: 5, to: 6, type: "subway", duration: "12m" },
+                    { from: 6, to: 7, type: "walk", duration: "5m" }
+                ],
+                stats: { driving: 0, subway: 2, walking: 4, total: "Walking day!" },
+                region: "Central Seoul (Jongno-gu)"
+            },
+            {
+                day: 6,
+                date: "Dec 25",
+                title: "Christmas Gangnam",
+                mapType: 'seoulDetail',
+                locations: [
+                    { name: "Anguk Airbnb", type: "home", position: { x: 52, y: 35 } },
+                    { name: "Namdaemun", type: "shopping", position: { x: 48, y: 48 } },
+                    { name: "Myeongdong", type: "shopping", position: { x: 50, y: 50 } },
+                    { name: "COEX Gangnam", type: "shopping", position: { x: 72, y: 70 } },
+                    { name: "Jamsil", type: "attraction", position: { x: 78, y: 65 } }
+                ],
+                routes: [
+                    { from: 0, to: 1, type: "subway", duration: "20m" },
+                    { from: 1, to: 2, type: "walk", duration: "10m" },
+                    { from: 2, to: 3, type: "subway", duration: "35m" },
+                    { from: 3, to: 4, type: "subway", duration: "5m" }
+                ],
+                stats: { driving: 0, subway: 95, walking: 2, total: "1.5h subway" },
+                region: "Central → Gangnam → Jamsil"
+            },
+            {
+                day: 7,
+                date: "Dec 26",
+                title: "Mosque + Hongdae",
+                mapType: 'seoulDetail',
+                locations: [
+                    { name: "Anguk Airbnb", type: "home", position: { x: 55, y: 35 } },
+                    { name: "Haneul Park", type: "attraction", position: { x: 22, y: 42 } },
+                    { name: "Itaewon Mosque", type: "attraction", position: { x: 48, y: 58 } },
+                    { name: "Hongdae", type: "shopping", position: { x: 28, y: 48 } },
+                    { name: "Dongdaemun", type: "shopping", position: { x: 65, y: 40 } }
+                ],
+                routes: [
+                    { from: 0, to: 1, type: "subway", duration: "40m" },
+                    { from: 1, to: 2, type: "subway", duration: "35m" },
+                    { from: 2, to: 3, type: "car", duration: "20m" },
+                    { from: 3, to: 4, type: "car", duration: "20m" }
+                ],
+                stats: { driving: 40, subway: 85, walking: 3, total: "2.5h travel" },
+                region: "Multi-district Seoul"
+            },
+            {
+                day: 8,
+                date: "Dec 27",
+                title: "Departure",
+                mapType: 'incheonGangwon',
+                locations: [
+                    { name: "Anguk Airbnb", type: "home", position: { x: 55, y: 50 } },
+                    { name: "Incheon Airport", type: "airport", position: { x: 20, y: 55 } }
+                ],
+                routes: [
+                    { from: 0, to: 1, type: "bus", duration: "1.5h" }
+                ],
+                stats: { driving: 60, subway: 0, walking: 0, total: "1.5h bus" },
+                region: "Seoul → Incheon"
+            }
+        ];
+
+        let currentDay = 0;
+
+        const getLocationColor = (type) => {
+            const colors = {
+                home: "bg-blue",
+                airport: "bg-purple",
+                resort: "bg-green",
+                attraction: "bg-yellow",
+                shopping: "bg-pink",
+                food: "bg-orange"
+            };
+            return colors[type] || "bg-gray-500";
+        };
+
+        const getRouteColor = (type) => {
+            const colors = {
+                car: "route-car",
+                subway: "route-subway",
+                walk: "route-walk",
+                bus: "route-bus"
+            };
+            return colors[type] || "route-car";
+        };
+
+        const getTransportIcon = (type) => {
+            const icons = {
+                car: '🚗',
+                subway: '🚇',
+                walk: '🚶',
+                bus: '🚌'
+            };
+            return icons[type] || '🚗';
+        };
+
+        function renderDayButtons() {
+            const container = document.getElementById('dayButtons');
+            container.innerHTML = days.map(day => `
+                <button class="day-btn ${day.day === currentDay ? 'active' : ''}" onclick="selectDay(${day.day})">
+                    <div class="day-label">Day ${day.day}</div>
+                    <div class="day-date">${day.date}</div>
+                </button>
+            `).join('');
+        }
+
+        function selectDay(dayNum) {
+            currentDay = dayNum;
+            renderDayButtons();
+            renderDay();
+        }
+
+        function renderDay() {
+            const day = days[currentDay];
+            
+            document.getElementById('dayTitle').textContent = `Day ${day.day}: ${day.title}`;
+            document.getElementById('regionText').textContent = day.region;
+            document.getElementById('statDriving').textContent = `${day.stats.driving}km`;
+            document.getElementById('statSubway').textContent = `${day.stats.subway}m`;
+            document.getElementById('statWalking').textContent = `${day.stats.walking}km`;
+            document.getElementById('statTotal').textContent = day.stats.total;
+
+            // Set background map image if available
+            const mapContainer = document.getElementById('mapContainer');
+            if (day.mapType && uploadedMapImages[day.mapType]) {
+                mapContainer.style.backgroundImage = `url(${uploadedMapImages[day.mapType]})`;
+            } else {
+                mapContainer.style.backgroundImage = 'none';
+                mapContainer.style.backgroundColor = '#f3f4f6';
+            }
+
+            // Render routes on SVG
+            const svg = document.getElementById('mapSvg');
+            svg.innerHTML = day.routes.map(route => {
+                const from = day.locations[route.from];
+                const to = day.locations[route.to];
+                return `
+                    <line x1="${from.position.x}%" y1="${from.position.y}%" 
+                          x2="${to.position.x}%" y2="${to.position.y}%" 
+                          class="route-line ${getRouteColor(route.type)}" />
+                `;
+            }).join('');
+
+            // Render location markers
+            const locContainer = document.getElementById('locations');
+            locContainer.innerHTML = day.locations.map((loc, idx) => `
+                <div class="location-marker" style="left: ${loc.position.x}%; top: ${loc.position.y}%;">
+                    <div class="marker-icon ${getLocationColor(loc.type)}"></div>
+                    <div class="marker-label">${idx + 1}. ${loc.name}</div>
+                </div>
+            `).join('');
+
+            // Render route list
+            const routeList = document.getElementById('routeList');
+            routeList.innerHTML = day.locations.map((loc, idx) => `
+                <div class="route-item">
+                    <div class="route-number ${getLocationColor(loc.type)}">${idx + 1}</div>
+                    <div class="route-details">
+                        <div class="route-name">${loc.name}</div>
+                        <div class="route-type">${loc.type}</div>
+                        ${day.routes[idx] ? `
+                            <div class="route-transport">
+                                <span>${getTransportIcon(day.routes[idx].type)}</span>
+                                <span>${day.routes[idx].duration}</span>
+                                <span>→</span>
+                            </div>
+                        ` : ''}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Initialize
+        renderDayButtons();
+        renderDay();
+    </script>
+</body>
+</html>
