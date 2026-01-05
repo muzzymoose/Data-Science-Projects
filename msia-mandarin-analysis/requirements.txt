@@ -7,6 +7,7 @@ pypinyin
 
 # NLP & Tokenization
 jieba
+tqdm
 
 # Data Science & Matrix Operations
 pandas
