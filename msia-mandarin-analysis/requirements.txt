@@ -1,0 +1,20 @@
+# Data Extraction
+youtube-transcript-api
+
+# Translation & Enrichment
+deep-translator
+
+# NLP & Tokenization
+jieba
+
+# Data Science & Matrix Operations
+pandas
+numpy
+scikit-learn
+gensim
+
+# Visualization
+plotly
+nbformat
+ipykernel
+kaleido
