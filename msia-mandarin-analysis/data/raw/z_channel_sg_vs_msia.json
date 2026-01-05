@@ -1,0 +1,2648 @@
+[
+    {
+        "text": "哈嘍，大家好",
+        "start_raw": 0.066,
+        "start_formatted": "00:00:00:066",
+        "duration_raw": 0.634,
+        "duration_formatted": "00:00:00:634"
+    },
+    {
+        "text": "歡迎來到Z頻道的大馬番薯日記",
+        "start_raw": 0.7,
+        "start_formatted": "00:00:00:700",
+        "duration_raw": 2.266,
+        "duration_formatted": "00:00:02:266"
+    },
+    {
+        "text": "我是傑克",
+        "start_raw": 2.966,
+        "start_formatted": "00:00:02:966",
+        "duration_raw": 1.034,
+        "duration_formatted": "00:00:01:034"
+    },
+    {
+        "text": "今天呢",
+        "start_raw": 4.0,
+        "start_formatted": "00:00:04:000",
+        "duration_raw": 0.666,
+        "duration_formatted": "00:00:00:666"
+    },
+    {
+        "text": "我要跟大家分享",
+        "start_raw": 4.666,
+        "start_formatted": "00:00:04:666",
+        "duration_raw": 1.4,
+        "duration_formatted": "00:00:01:399"
+    },
+    {
+        "text": "我剛剛突發奇想的一個Idea啦",
+        "start_raw": 6.066,
+        "start_formatted": "00:00:06:065",
+        "duration_raw": 2.3,
+        "duration_formatted": "00:00:02:299"
+    },
+    {
+        "text": "其實呢我從新加坡回到馬來西亞生活呢",
+        "start_raw": 8.4,
+        "start_formatted": "00:00:08:400",
+        "duration_raw": 2.366,
+        "duration_formatted": "00:00:02:366"
+    },
+    {
+        "text": "要將近兩年了",
+        "start_raw": 10.766,
+        "start_formatted": "00:00:10:766",
+        "duration_raw": 1.334,
+        "duration_formatted": "00:00:01:334"
+    },
+    {
+        "text": "所以呢我剛就突然間想到",
+        "start_raw": 12.1,
+        "start_formatted": "00:00:12:099",
+        "duration_raw": 2.2,
+        "duration_formatted": "00:00:02:200"
+    },
+    {
+        "text": "想跟大家分享一下",
+        "start_raw": 14.3,
+        "start_formatted": "00:00:14:300",
+        "duration_raw": 1.4,
+        "duration_formatted": "00:00:01:399"
+    },
+    {
+        "text": "「住」馬來西亞",
+        "start_raw": 15.733,
+        "start_formatted": "00:00:15:733",
+        "duration_raw": 1.233,
+        "duration_formatted": "00:00:01:233"
+    },
+    {
+        "text": "跟「租」新加坡",
+        "start_raw": 16.966,
+        "start_formatted": "00:00:16:966",
+        "duration_raw": 1.467,
+        "duration_formatted": "00:00:01:467"
+    },
+    {
+        "text": "到底有什麼不同",
+        "start_raw": 18.5,
+        "start_formatted": "00:00:18:500",
+        "duration_raw": 1.166,
+        "duration_formatted": "00:00:01:165"
+    },
+    {
+        "text": "我覺得影片出去了過後噢",
+        "start_raw": 19.666,
+        "start_formatted": "00:00:19:666",
+        "duration_raw": 1.667,
+        "duration_formatted": "00:00:01:667"
+    },
+    {
+        "text": "肯定會有人講",
+        "start_raw": 21.333,
+        "start_formatted": "00:00:21:332",
+        "duration_raw": 0.933,
+        "duration_formatted": "00:00:00:933"
+    },
+    {
+        "text": "哎呀",
+        "start_raw": 22.3,
+        "start_formatted": "00:00:22:300",
+        "duration_raw": 0.566,
+        "duration_formatted": "00:00:00:566"
+    },
+    {
+        "text": "如果你之前在新加坡買屋子",
+        "start_raw": 22.866,
+        "start_formatted": "00:00:22:865",
+        "duration_raw": 1.667,
+        "duration_formatted": "00:00:01:667"
+    },
+    {
+        "text": "你就不會有這種煩惱了",
+        "start_raw": 24.533,
+        "start_formatted": "00:00:24:533",
+        "duration_raw": 1.3,
+        "duration_formatted": "00:00:01:300"
+    },
+    {
+        "text": "所以呢我在這裡要做一個disclaimer",
+        "start_raw": 25.866,
+        "start_formatted": "00:00:25:865",
+        "duration_raw": 2.467,
+        "duration_formatted": "00:00:02:467"
+    },
+    {
+        "text": "就是這支影片哦",
+        "start_raw": 28.333,
+        "start_formatted": "00:00:28:332",
+        "duration_raw": 1.233,
+        "duration_formatted": "00:00:01:233"
+    },
+    {
+        "text": "是applicable for",
+        "start_raw": 29.566,
+        "start_formatted": "00:00:29:565",
+        "duration_raw": 1.4,
+        "duration_formatted": "00:00:01:399"
+    },
+    {
+        "text": "在新加坡沒有買房子",
+        "start_raw": 31.0,
+        "start_formatted": "00:00:31:000",
+        "duration_raw": 1.833,
+        "duration_formatted": "00:00:01:833"
+    },
+    {
+        "text": "在新加坡租房子",
+        "start_raw": 32.833,
+        "start_formatted": "00:00:32:832",
+        "duration_raw": 1.5,
+        "duration_formatted": "00:00:01:500"
+    },
+    {
+        "text": "但是呢在馬來西亞擁有自己屋子的人",
+        "start_raw": 34.366,
+        "start_formatted": "00:00:34:365",
+        "duration_raw": 2.5,
+        "duration_formatted": "00:00:02:500"
+    },
+    {
+        "text": "那其實就是我自己本身的狀況啦",
+        "start_raw": 36.9,
+        "start_formatted": "00:00:36:899",
+        "duration_raw": 2.133,
+        "duration_formatted": "00:00:02:133"
+    },
+    {
+        "text": "這是為了避免一些酸民在那邊耍嘴炮",
+        "start_raw": 39.033,
+        "start_formatted": "00:00:39:033",
+        "duration_raw": 3.267,
+        "duration_formatted": "00:00:03:266"
+    },
+    {
+        "text": "好",
+        "start_raw": 42.3,
+        "start_formatted": "00:00:42:299",
+        "duration_raw": 0.433,
+        "duration_formatted": "00:00:00:433"
+    },
+    {
+        "text": "那麼現在呢就來跟你們分享一下",
+        "start_raw": 42.733,
+        "start_formatted": "00:00:42:732",
+        "duration_raw": 1.667,
+        "duration_formatted": "00:00:01:667"
+    },
+    {
+        "text": "我覺得啦",
+        "start_raw": 44.4,
+        "start_formatted": "00:00:44:399",
+        "duration_raw": 1.1,
+        "duration_formatted": "00:00:01:100"
+    },
+    {
+        "text": "“住”馬來西亞跟“租”新加坡最大的不同哦",
+        "start_raw": 45.5,
+        "start_formatted": "00:00:45:500",
+        "duration_raw": 2.666,
+        "duration_formatted": "00:00:02:665"
+    },
+    {
+        "text": "就是關於",
+        "start_raw": 48.233,
+        "start_formatted": "00:00:48:232",
+        "duration_raw": 0.867,
+        "duration_formatted": "00:00:00:867"
+    },
+    {
+        "text": "門禁這件事情",
+        "start_raw": 49.1,
+        "start_formatted": "00:00:49:100",
+        "duration_raw": 1.333,
+        "duration_formatted": "00:00:01:332"
+    },
+    {
+        "text": "這個是我親身經歷的啦",
+        "start_raw": 50.466,
+        "start_formatted": "00:00:50:466",
+        "duration_raw": 1.334,
+        "duration_formatted": "00:00:01:334"
+    },
+    {
+        "text": "所謂的門禁就是",
+        "start_raw": 51.833,
+        "start_formatted": "00:00:51:832",
+        "duration_raw": 1.133,
+        "duration_formatted": "00:00:01:133"
+    },
+    {
+        "text": "到了一定的鐘點噢",
+        "start_raw": 52.966,
+        "start_formatted": "00:00:52:966",
+        "duration_raw": 1.534,
+        "duration_formatted": "00:00:01:534"
+    },
+    {
+        "text": "他就不給你進去了",
+        "start_raw": 54.5,
+        "start_formatted": "00:00:54:500",
+        "duration_raw": 1.233,
+        "duration_formatted": "00:00:01:233"
+    },
+    {
+        "text": "他會把那個鎖頭鎖掉",
+        "start_raw": 55.733,
+        "start_formatted": "00:00:55:732",
+        "duration_raw": 1.4,
+        "duration_formatted": "00:00:01:399"
+    },
+    {
+        "text": "我記得我第一次租的那間房子啦",
+        "start_raw": 57.2,
+        "start_formatted": "00:00:57:200",
+        "duration_raw": 2.566,
+        "duration_formatted": "00:00:02:565"
+    },
+    {
+        "text": "那個屋主哦",
+        "start_raw": 59.766,
+        "start_formatted": "00:00:59:765",
+        "duration_raw": 0.767,
+        "duration_formatted": "00:00:00:767"
+    },
+    {
+        "text": "在每天的晚上11點哦",
+        "start_raw": 60.533,
+        "start_formatted": "00:01:00:533",
+        "duration_raw": 2.167,
+        "duration_formatted": "00:00:02:166"
+    },
+    {
+        "text": "他就會把那個鎖頭鎖掉的",
+        "start_raw": 62.7,
+        "start_formatted": "00:01:02:700",
+        "duration_raw": 1.333,
+        "duration_formatted": "00:00:01:332"
+    },
+    {
+        "text": "如果你是超過11點才要回來的話",
+        "start_raw": 64.033,
+        "start_formatted": "00:01:04:033",
+        "duration_raw": 2.667,
+        "duration_formatted": "00:00:02:666"
+    },
+    {
+        "text": "一定要跟你的室友溝通好",
+        "start_raw": 66.733,
+        "start_formatted": "00:01:06:733",
+        "duration_raw": 1.9,
+        "duration_formatted": "00:00:01:899"
+    },
+    {
+        "text": "叫他11點過後來跟你開門",
+        "start_raw": 68.633,
+        "start_formatted": "00:01:08:632",
+        "duration_raw": 1.967,
+        "duration_formatted": "00:00:01:967"
+    },
+    {
+        "text": "那住在馬來西亞自己的房子呢",
+        "start_raw": 70.6,
+        "start_formatted": "00:01:10:599",
+        "duration_raw": 1.833,
+        "duration_formatted": "00:00:01:833"
+    },
+    {
+        "text": "就絕對不會有這樣子的問題啦",
+        "start_raw": 72.433,
+        "start_formatted": "00:01:12:433",
+        "duration_raw": 1.5,
+        "duration_formatted": "00:00:01:500"
+    },
+    {
+        "text": "那為什麼會有這樣子的問題呢",
+        "start_raw": 74.0,
+        "start_formatted": "00:01:14:000",
+        "duration_raw": 1.666,
+        "duration_formatted": "00:00:01:665"
+    },
+    {
+        "text": "其實哦就是屋主本身",
+        "start_raw": 75.666,
+        "start_formatted": "00:01:15:665",
+        "duration_raw": 1.6,
+        "duration_formatted": "00:00:01:600"
+    },
+    {
+        "text": "他沒有把那個鎖頭的鎖匙給租客",
+        "start_raw": 77.266,
+        "start_formatted": "00:01:17:266",
+        "duration_raw": 2.6,
+        "duration_formatted": "00:00:02:600"
+    },
+    {
+        "text": "如果是往自己的家里安全去想的話",
+        "start_raw": 79.966,
+        "start_formatted": "00:01:19:965",
+        "duration_raw": 2.534,
+        "duration_formatted": "00:00:02:533"
+    },
+    {
+        "text": "這個屋主的做法呢是情有可原啦",
+        "start_raw": 82.533,
+        "start_formatted": "00:01:22:533",
+        "duration_raw": 2.267,
+        "duration_formatted": "00:00:02:266"
+    },
+    {
+        "text": "但是如果住在馬來西亞",
+        "start_raw": 84.866,
+        "start_formatted": "00:01:24:865",
+        "duration_raw": 1.534,
+        "duration_formatted": "00:00:01:534"
+    },
+    {
+        "text": "自己的屋子就絕對不會有這樣子的問題",
+        "start_raw": 86.4,
+        "start_formatted": "00:01:26:400",
+        "duration_raw": 1.8,
+        "duration_formatted": "00:00:01:800"
+    },
+    {
+        "text": "因為鎖匙全部都是自己拿的",
+        "start_raw": 88.2,
+        "start_formatted": "00:01:28:200",
+        "duration_raw": 2.233,
+        "duration_formatted": "00:00:02:233"
+    },
+    {
+        "text": "再來呢",
+        "start_raw": 91.366,
+        "start_formatted": "00:01:31:365",
+        "duration_raw": 0.667,
+        "duration_formatted": "00:00:00:667"
+    },
+    {
+        "text": "就是訪客",
+        "start_raw": 92.033,
+        "start_formatted": "00:01:32:033",
+        "duration_raw": 1.133,
+        "duration_formatted": "00:00:01:133"
+    },
+    {
+        "text": "那我記得噢",
+        "start_raw": 93.266,
+        "start_formatted": "00:01:33:266",
+        "duration_raw": 0.7,
+        "duration_formatted": "00:00:00:700"
+    },
+    {
+        "text": "之前我在新加坡住的最後一家",
+        "start_raw": 93.966,
+        "start_formatted": "00:01:33:965",
+        "duration_raw": 2.834,
+        "duration_formatted": "00:00:02:834"
+    },
+    {
+        "text": "也就是我搬離新加坡租的那間房子哦",
+        "start_raw": 96.8,
+        "start_formatted": "00:01:36:799",
+        "duration_raw": 3.166,
+        "duration_formatted": "00:00:03:165"
+    },
+    {
+        "text": "那個屋主很好啦",
+        "start_raw": 100.0,
+        "start_formatted": "00:01:40:000",
+        "duration_raw": 1.133,
+        "duration_formatted": "00:00:01:133"
+    },
+    {
+        "text": "只要通知一聲就沒有事了",
+        "start_raw": 101.133,
+        "start_formatted": "00:01:41:132",
+        "duration_raw": 1.633,
+        "duration_formatted": "00:00:01:633"
+    },
+    {
+        "text": "但是哦",
+        "start_raw": 102.8,
+        "start_formatted": "00:01:42:799",
+        "duration_raw": 0.833,
+        "duration_formatted": "00:00:00:833"
+    },
+    {
+        "text": "我就有試過",
+        "start_raw": 103.633,
+        "start_formatted": "00:01:43:632",
+        "duration_raw": 1.2,
+        "duration_formatted": "00:00:01:199"
+    },
+    {
+        "text": "在之前所租的一間屋子",
+        "start_raw": 104.833,
+        "start_formatted": "00:01:44:832",
+        "duration_raw": 2.067,
+        "duration_formatted": "00:00:02:067"
+    },
+    {
+        "text": "我帶Z嫂上去哦",
+        "start_raw": 106.9,
+        "start_formatted": "00:01:46:900",
+        "duration_raw": 1.5,
+        "duration_formatted": "00:00:01:500"
+    },
+    {
+        "text": "結果那個",
+        "start_raw": 108.4,
+        "start_formatted": "00:01:48:400",
+        "duration_raw": 1.133,
+        "duration_formatted": "00:00:01:133"
+    },
+    {
+        "text": "女房東她",
+        "start_raw": 109.533,
+        "start_formatted": "00:01:49:533",
+        "duration_raw": 1.533,
+        "duration_formatted": "00:00:01:532"
+    },
+    {
+        "text": "就有 一點不開心啦",
+        "start_raw": 111.066,
+        "start_formatted": "00:01:51:066",
+        "duration_raw": 1.334,
+        "duration_formatted": "00:00:01:334"
+    },
+    {
+        "text": "那時候Z嫂只是我女朋友",
+        "start_raw": 112.433,
+        "start_formatted": "00:01:52:433",
+        "duration_raw": 1.4,
+        "duration_formatted": "00:00:01:399"
+    },
+    {
+        "text": "然後在客廳",
+        "start_raw": 113.833,
+        "start_formatted": "00:01:53:832",
+        "duration_raw": 1.033,
+        "duration_formatted": "00:00:01:032"
+    },
+    {
+        "text": "彈下吉他也沒有什麼東西",
+        "start_raw": 114.866,
+        "start_formatted": "00:01:54:865",
+        "duration_raw": 1.467,
+        "duration_formatted": "00:00:01:467"
+    },
+    {
+        "text": "可是呢如果是住在馬來西亞自己的房子哦",
+        "start_raw": 116.366,
+        "start_formatted": "00:01:56:365",
+        "duration_raw": 2.767,
+        "duration_formatted": "00:00:02:766"
+    },
+    {
+        "text": "就完全不會有這樣子的問題",
+        "start_raw": 119.166,
+        "start_formatted": "00:01:59:165",
+        "duration_raw": 1.467,
+        "duration_formatted": "00:00:01:467"
+    },
+    {
+        "text": "你要帶什麼訪客進來都好",
+        "start_raw": 120.666,
+        "start_formatted": "00:02:00:665",
+        "duration_raw": 2.134,
+        "duration_formatted": "00:00:02:133"
+    },
+    {
+        "text": "你都不需要過問",
+        "start_raw": 122.8,
+        "start_formatted": "00:02:02:799",
+        "duration_raw": 1.2,
+        "duration_formatted": "00:00:01:199"
+    },
+    {
+        "text": "這個就是其中一個",
+        "start_raw": 124.0,
+        "start_formatted": "00:02:04:000",
+        "duration_raw": 1.133,
+        "duration_formatted": "00:00:01:133"
+    },
+    {
+        "text": "「住」馬來西亞跟「租」新加坡的差別啦",
+        "start_raw": 125.133,
+        "start_formatted": "00:02:05:132",
+        "duration_raw": 2.533,
+        "duration_formatted": "00:00:02:532"
+    },
+    {
+        "text": "今天的晚餐",
+        "start_raw": 127.666,
+        "start_formatted": "00:02:07:665",
+        "duration_raw": 1.867,
+        "duration_formatted": "00:00:01:867"
+    },
+    {
+        "text": "小番薯的干撈面加一顆",
+        "start_raw": 129.533,
+        "start_formatted": "00:02:09:532",
+        "duration_raw": 2.667,
+        "duration_formatted": "00:00:02:666"
+    },
+    {
+        "text": "鹵蛋",
+        "start_raw": 132.2,
+        "start_formatted": "00:02:12:199",
+        "duration_raw": 1.0,
+        "duration_formatted": "00:00:01:000"
+    },
+    {
+        "text": "拿",
+        "start_raw": 133.2,
+        "start_formatted": "00:02:13:199",
+        "duration_raw": 0.566,
+        "duration_formatted": "00:00:00:566"
+    },
+    {
+        "text": "快點吃",
+        "start_raw": 135.066,
+        "start_formatted": "00:02:15:066",
+        "duration_raw": 0.8,
+        "duration_formatted": "00:00:00:800"
+    },
+    {
+        "text": "雞蛋",
+        "start_raw": 136.066,
+        "start_formatted": "00:02:16:066",
+        "duration_raw": 0.567,
+        "duration_formatted": "00:00:00:567"
+    },
+    {
+        "text": "哎",
+        "start_raw": 136.633,
+        "start_formatted": "00:02:16:633",
+        "duration_raw": 0.633,
+        "duration_formatted": "00:00:00:633"
+    },
+    {
+        "text": "女孩做麼這樣粗魯噢",
+        "start_raw": 137.266,
+        "start_formatted": "00:02:17:265",
+        "duration_raw": 1.1,
+        "duration_formatted": "00:00:01:100"
+    },
+    {
+        "text": "坐下來",
+        "start_raw": 138.366,
+        "start_formatted": "00:02:18:366",
+        "duration_raw": 0.9,
+        "duration_formatted": "00:00:00:900"
+    },
+    {
+        "text": "OK",
+        "start_raw": 139.5,
+        "start_formatted": "00:02:19:500",
+        "duration_raw": 0.633,
+        "duration_formatted": "00:00:00:633"
+    },
+    {
+        "text": "吃",
+        "start_raw": 140.133,
+        "start_formatted": "00:02:20:133",
+        "duration_raw": 0.5,
+        "duration_formatted": "00:00:00:500"
+    },
+    {
+        "text": "而我呢",
+        "start_raw": 140.666,
+        "start_formatted": "00:02:20:665",
+        "duration_raw": 0.8,
+        "duration_formatted": "00:00:00:800"
+    },
+    {
+        "text": "今天晚上呢是吃粿條仔",
+        "start_raw": 141.466,
+        "start_formatted": "00:02:21:466",
+        "duration_raw": 2.667,
+        "duration_formatted": "00:00:02:666"
+    },
+    {
+        "text": "餓死了",
+        "start_raw": 144.2,
+        "start_formatted": "00:02:24:199",
+        "duration_raw": 0.9,
+        "duration_formatted": "00:00:00:900"
+    },
+    {
+        "text": "嗯",
+        "start_raw": 146.733,
+        "start_formatted": "00:02:26:733",
+        "duration_raw": 0.367,
+        "duration_formatted": "00:00:00:367"
+    },
+    {
+        "text": "味道不錯",
+        "start_raw": 147.1,
+        "start_formatted": "00:02:27:099",
+        "duration_raw": 0.833,
+        "duration_formatted": "00:00:00:833"
+    },
+    {
+        "text": "什麼",
+        "start_raw": 152.633,
+        "start_formatted": "00:02:32:633",
+        "duration_raw": 0.633,
+        "duration_formatted": "00:00:00:633"
+    },
+    {
+        "text": "打包回家都可以講啊",
+        "start_raw": 153.266,
+        "start_formatted": "00:02:33:265",
+        "duration_raw": 1.6,
+        "duration_formatted": "00:00:01:600"
+    },
+    {
+        "text": "是的",
+        "start_raw": 154.866,
+        "start_formatted": "00:02:34:866",
+        "duration_raw": 1.034,
+        "duration_formatted": "00:00:01:034"
+    },
+    {
+        "text": "打包回家呢",
+        "start_raw": 155.9,
+        "start_formatted": "00:02:35:900",
+        "duration_raw": 1.166,
+        "duration_formatted": "00:00:01:165"
+    },
+    {
+        "text": "這個話題哦",
+        "start_raw": 157.066,
+        "start_formatted": "00:02:37:066",
+        "duration_raw": 0.834,
+        "duration_formatted": "00:00:00:834"
+    },
+    {
+        "text": "都可以拿出來講",
+        "start_raw": 157.933,
+        "start_formatted": "00:02:37:932",
+        "duration_raw": 1.233,
+        "duration_formatted": "00:00:01:233"
+    },
+    {
+        "text": "依據我個人的過往經驗哦",
+        "start_raw": 159.166,
+        "start_formatted": "00:02:39:165",
+        "duration_raw": 2.6,
+        "duration_formatted": "00:00:02:600"
+    },
+    {
+        "text": "幾乎啦",
+        "start_raw": 161.766,
+        "start_formatted": "00:02:41:765",
+        "duration_raw": 0.8,
+        "duration_formatted": "00:00:00:800"
+    },
+    {
+        "text": "如果是要在租的地方吃的話哦",
+        "start_raw": 162.566,
+        "start_formatted": "00:02:42:566",
+        "duration_raw": 2.434,
+        "duration_formatted": "00:00:02:434"
+    },
+    {
+        "text": "都是在房間而已",
+        "start_raw": 165.0,
+        "start_formatted": "00:02:45:000",
+        "duration_raw": 1.066,
+        "duration_formatted": "00:00:01:066"
+    },
+    {
+        "text": "在我印象當中哦",
+        "start_raw": 166.133,
+        "start_formatted": "00:02:46:133",
+        "duration_raw": 1.5,
+        "duration_formatted": "00:00:01:500"
+    },
+    {
+        "text": "只有",
+        "start_raw": 167.666,
+        "start_formatted": "00:02:47:665",
+        "duration_raw": 0.767,
+        "duration_formatted": "00:00:00:767"
+    },
+    {
+        "text": "一間",
+        "start_raw": 168.433,
+        "start_formatted": "00:02:48:432",
+        "duration_raw": 0.8,
+        "duration_formatted": "00:00:00:800"
+    },
+    {
+        "text": "他們是要求我們在飯桌上面吃的",
+        "start_raw": 169.233,
+        "start_formatted": "00:02:49:233",
+        "duration_raw": 3.067,
+        "duration_formatted": "00:00:03:067"
+    },
+    {
+        "text": "其餘的哦都是帶進房間吃",
+        "start_raw": 172.333,
+        "start_formatted": "00:02:52:332",
+        "duration_raw": 2.133,
+        "duration_formatted": "00:00:02:133"
+    },
+    {
+        "text": "當然我也知道有一些房主哦",
+        "start_raw": 174.5,
+        "start_formatted": "00:02:54:500",
+        "duration_raw": 1.533,
+        "duration_formatted": "00:00:01:532"
+    },
+    {
+        "text": "他們是完全不會讓租客在",
+        "start_raw": 176.033,
+        "start_formatted": "00:02:56:032",
+        "duration_raw": 2.433,
+        "duration_formatted": "00:00:02:432"
+    },
+    {
+        "text": "那一間房子裡面哦吃東西的",
+        "start_raw": 178.466,
+        "start_formatted": "00:02:58:466",
+        "duration_raw": 2.034,
+        "duration_formatted": "00:00:02:033"
+    },
+    {
+        "text": "也有",
+        "start_raw": 180.566,
+        "start_formatted": "00:03:00:566",
+        "duration_raw": 0.634,
+        "duration_formatted": "00:00:00:634"
+    },
+    {
+        "text": "隻是我比較幸運的就是呢",
+        "start_raw": 181.2,
+        "start_formatted": "00:03:01:199",
+        "duration_raw": 1.6,
+        "duration_formatted": "00:00:01:600"
+    },
+    {
+        "text": "我的屋主哦",
+        "start_raw": 182.8,
+        "start_formatted": "00:03:02:800",
+        "duration_raw": 0.9,
+        "duration_formatted": "00:00:00:900"
+    },
+    {
+        "text": "他們都是允許我們在房間裡面吃東西的",
+        "start_raw": 183.7,
+        "start_formatted": "00:03:03:699",
+        "duration_raw": 2.6,
+        "duration_formatted": "00:00:02:600"
+    },
+    {
+        "text": "因為其實他們自己的家人哦",
+        "start_raw": 186.366,
+        "start_formatted": "00:03:06:366",
+        "duration_raw": 1.934,
+        "duration_formatted": "00:00:01:933"
+    },
+    {
+        "text": "都是在客廳跟飯廳那邊",
+        "start_raw": 188.333,
+        "start_formatted": "00:03:08:332",
+        "duration_raw": 2.067,
+        "duration_formatted": "00:00:02:067"
+    },
+    {
+        "text": "就是在外面活動啦",
+        "start_raw": 190.4,
+        "start_formatted": "00:03:10:400",
+        "duration_raw": 1.566,
+        "duration_formatted": "00:00:01:566"
+    },
+    {
+        "text": "所以呢我們這些租客",
+        "start_raw": 192.033,
+        "start_formatted": "00:03:12:032",
+        "duration_raw": 1.533,
+        "duration_formatted": "00:00:01:532"
+    },
+    {
+        "text": "所有的活動",
+        "start_raw": 193.6,
+        "start_formatted": "00:03:13:599",
+        "duration_raw": 1.266,
+        "duration_formatted": "00:00:01:266"
+    },
+    {
+        "text": "都是在房間裡面",
+        "start_raw": 194.866,
+        "start_formatted": "00:03:14:866",
+        "duration_raw": 1.134,
+        "duration_formatted": "00:00:01:133"
+    },
+    {
+        "text": "放工過後呢",
+        "start_raw": 196.0,
+        "start_formatted": "00:03:16:000",
+        "duration_raw": 0.866,
+        "duration_formatted": "00:00:00:866"
+    },
+    {
+        "text": "打包",
+        "start_raw": 196.866,
+        "start_formatted": "00:03:16:866",
+        "duration_raw": 0.567,
+        "duration_formatted": "00:00:00:567"
+    },
+    {
+        "text": "就回房間吃",
+        "start_raw": 197.433,
+        "start_formatted": "00:03:17:432",
+        "duration_raw": 0.9,
+        "duration_formatted": "00:00:00:900"
+    },
+    {
+        "text": "要不然就是在外面吃了才回房間",
+        "start_raw": 198.366,
+        "start_formatted": "00:03:18:366",
+        "duration_raw": 2.167,
+        "duration_formatted": "00:00:02:166"
+    },
+    {
+        "text": "她又要上鏡了",
+        "start_raw": 201.5,
+        "start_formatted": "00:03:21:500",
+        "duration_raw": 1.2,
+        "duration_formatted": "00:00:01:199"
+    },
+    {
+        "text": "你要跟哥哥姐姐講什麼",
+        "start_raw": 203.2,
+        "start_formatted": "00:03:23:199",
+        "duration_raw": 1.466,
+        "duration_formatted": "00:00:01:465"
+    },
+    {
+        "text": "哥哥姐姐",
+        "start_raw": 204.7,
+        "start_formatted": "00:03:24:699",
+        "duration_raw": 1.133,
+        "duration_formatted": "00:00:01:133"
+    },
+    {
+        "text": "我在吃東西",
+        "start_raw": 205.833,
+        "start_formatted": "00:03:25:832",
+        "duration_raw": 1.5,
+        "duration_formatted": "00:00:01:500"
+    },
+    {
+        "text": "全部人吃東西",
+        "start_raw": 207.566,
+        "start_formatted": "00:03:27:566",
+        "duration_raw": 1.8,
+        "duration_formatted": "00:00:01:800"
+    },
+    {
+        "text": "OK OK",
+        "start_raw": 209.466,
+        "start_formatted": "00:03:29:466",
+        "duration_raw": 0.534,
+        "duration_formatted": "00:00:00:534"
+    },
+    {
+        "text": "去吃去吃",
+        "start_raw": 210.0,
+        "start_formatted": "00:03:30:000",
+        "duration_raw": 0.733,
+        "duration_formatted": "00:00:00:733"
+    },
+    {
+        "text": "不會像“住”馬來西亞",
+        "start_raw": 210.733,
+        "start_formatted": "00:03:30:733",
+        "duration_raw": 1.667,
+        "duration_formatted": "00:00:01:667"
+    },
+    {
+        "text": "住在自己的家裡面咧",
+        "start_raw": 212.4,
+        "start_formatted": "00:03:32:400",
+        "duration_raw": 1.4,
+        "duration_formatted": "00:00:01:399"
+    },
+    {
+        "text": "你要打包什麼",
+        "start_raw": 213.8,
+        "start_formatted": "00:03:33:800",
+        "duration_raw": 1.1,
+        "duration_formatted": "00:00:01:100"
+    },
+    {
+        "text": "你要吃什麼",
+        "start_raw": 214.9,
+        "start_formatted": "00:03:34:900",
+        "duration_raw": 0.8,
+        "duration_formatted": "00:00:00:800"
+    },
+    {
+        "text": "要煮什麼",
+        "start_raw": 215.7,
+        "start_formatted": "00:03:35:699",
+        "duration_raw": 0.7,
+        "duration_formatted": "00:00:00:700"
+    },
+    {
+        "text": "都沒有問題",
+        "start_raw": 216.4,
+        "start_formatted": "00:03:36:400",
+        "duration_raw": 1.066,
+        "duration_formatted": "00:00:01:066"
+    },
+    {
+        "text": "因為是自己的家嘛",
+        "start_raw": 217.466,
+        "start_formatted": "00:03:37:466",
+        "duration_raw": 1.234,
+        "duration_formatted": "00:00:01:234"
+    },
+    {
+        "text": "所以呢如果「租」新加坡的話",
+        "start_raw": 218.7,
+        "start_formatted": "00:03:38:699",
+        "duration_raw": 2.333,
+        "duration_formatted": "00:00:02:333"
+    },
+    {
+        "text": "在家自己煮這件事情哦",
+        "start_raw": 221.1,
+        "start_formatted": "00:03:41:099",
+        "duration_raw": 2.166,
+        "duration_formatted": "00:00:02:165"
+    },
+    {
+        "text": "應該是蠻難的啦",
+        "start_raw": 223.366,
+        "start_formatted": "00:03:43:366",
+        "duration_raw": 1.567,
+        "duration_formatted": "00:00:01:567"
+    },
+    {
+        "text": "因為多數的屋主噢",
+        "start_raw": 224.966,
+        "start_formatted": "00:03:44:966",
+        "duration_raw": 1.134,
+        "duration_formatted": "00:00:01:133"
+    },
+    {
+        "text": "他們都是不允許",
+        "start_raw": 226.133,
+        "start_formatted": "00:03:46:133",
+        "duration_raw": 1.5,
+        "duration_formatted": "00:00:01:500"
+    },
+    {
+        "text": "租客在他們家裡面煮東西的",
+        "start_raw": 227.633,
+        "start_formatted": "00:03:47:633",
+        "duration_raw": 2.0,
+        "duration_formatted": "00:00:02:000"
+    },
+    {
+        "text": "我租過幾間啦",
+        "start_raw": 229.633,
+        "start_formatted": "00:03:49:633",
+        "duration_raw": 0.9,
+        "duration_formatted": "00:00:00:900"
+    },
+    {
+        "text": "就只有那麼一間是允許",
+        "start_raw": 230.533,
+        "start_formatted": "00:03:50:532",
+        "duration_raw": 1.767,
+        "duration_formatted": "00:00:01:766"
+    },
+    {
+        "text": "我跟Z嫂",
+        "start_raw": 232.3,
+        "start_formatted": "00:03:52:300",
+        "duration_raw": 0.766,
+        "duration_formatted": "00:00:00:766"
+    },
+    {
+        "text": "在裡面小煮",
+        "start_raw": 233.066,
+        "start_formatted": "00:03:53:066",
+        "duration_raw": 1.0,
+        "duration_formatted": "00:00:01:000"
+    },
+    {
+        "text": "所以呢",
+        "start_raw": 234.1,
+        "start_formatted": "00:03:54:099",
+        "duration_raw": 0.566,
+        "duration_formatted": "00:00:00:566"
+    },
+    {
+        "text": "這個就是",
+        "start_raw": 234.666,
+        "start_formatted": "00:03:54:665",
+        "duration_raw": 0.634,
+        "duration_formatted": "00:00:00:634"
+    },
+    {
+        "text": "「租」新加坡跟「住」馬來西亞",
+        "start_raw": 235.3,
+        "start_formatted": "00:03:55:300",
+        "duration_raw": 2.1,
+        "duration_formatted": "00:00:02:100"
+    },
+    {
+        "text": "其中一個不同的點",
+        "start_raw": 237.4,
+        "start_formatted": "00:03:57:400",
+        "duration_raw": 1.6,
+        "duration_formatted": "00:00:01:600"
+    },
+    {
+        "text": "沒有在新加坡生活過的馬來西亞觀眾",
+        "start_raw": 248.7,
+        "start_formatted": "00:04:08:699",
+        "duration_raw": 2.8,
+        "duration_formatted": "00:00:02:799"
+    },
+    {
+        "text": "看到這邊應該會想",
+        "start_raw": 251.5,
+        "start_formatted": "00:04:11:500",
+        "duration_raw": 1.233,
+        "duration_formatted": "00:00:01:233"
+    },
+    {
+        "text": "不是吧",
+        "start_raw": 252.733,
+        "start_formatted": "00:04:12:733",
+        "duration_raw": 0.967,
+        "duration_formatted": "00:00:00:967"
+    },
+    {
+        "text": "洗衣服都要管啊",
+        "start_raw": 253.7,
+        "start_formatted": "00:04:13:699",
+        "duration_raw": 1.466,
+        "duration_formatted": "00:00:01:465"
+    },
+    {
+        "text": "洗衣服都有的講啊",
+        "start_raw": 255.2,
+        "start_formatted": "00:04:15:199",
+        "duration_raw": 1.366,
+        "duration_formatted": "00:00:01:366"
+    },
+    {
+        "text": "沒錯",
+        "start_raw": 256.566,
+        "start_formatted": "00:04:16:565",
+        "duration_raw": 0.767,
+        "duration_formatted": "00:00:00:767"
+    },
+    {
+        "text": "如果是有在新加坡租過房間的人呢",
+        "start_raw": 257.333,
+        "start_formatted": "00:04:17:333",
+        "duration_raw": 2.467,
+        "duration_formatted": "00:00:02:467"
+    },
+    {
+        "text": "都知道",
+        "start_raw": 259.833,
+        "start_formatted": "00:04:19:833",
+        "duration_raw": 0.7,
+        "duration_formatted": "00:00:00:700"
+    },
+    {
+        "text": "有一些屋主哦",
+        "start_raw": 260.533,
+        "start_formatted": "00:04:20:533",
+        "duration_raw": 0.967,
+        "duration_formatted": "00:00:00:967"
+    },
+    {
+        "text": "應該是有50%以上啦",
+        "start_raw": 261.5,
+        "start_formatted": "00:04:21:500",
+        "duration_raw": 2.833,
+        "duration_formatted": "00:00:02:833"
+    },
+    {
+        "text": "他們都是允許",
+        "start_raw": 264.5,
+        "start_formatted": "00:04:24:500",
+        "duration_raw": 1.4,
+        "duration_formatted": "00:00:01:399"
+    },
+    {
+        "text": "租客",
+        "start_raw": 265.9,
+        "start_formatted": "00:04:25:899",
+        "duration_raw": 0.8,
+        "duration_formatted": "00:00:00:800"
+    },
+    {
+        "text": "一個禮拜裡面哦只可以洗兩次衣服",
+        "start_raw": 266.7,
+        "start_formatted": "00:04:26:699",
+        "duration_raw": 2.866,
+        "duration_formatted": "00:00:02:866"
+    },
+    {
+        "text": "可是呢我跟Z嫂蠻幸運的啦",
+        "start_raw": 269.6,
+        "start_formatted": "00:04:29:600",
+        "duration_raw": 1.8,
+        "duration_formatted": "00:00:01:800"
+    },
+    {
+        "text": "就是我們最後一次租的那間房哦",
+        "start_raw": 271.4,
+        "start_formatted": "00:04:31:399",
+        "duration_raw": 2.5,
+        "duration_formatted": "00:00:02:500"
+    },
+    {
+        "text": "屋主是允許我們天天洗的",
+        "start_raw": 273.9,
+        "start_formatted": "00:04:33:899",
+        "duration_raw": 1.733,
+        "duration_formatted": "00:00:01:733"
+    },
+    {
+        "text": "他是沒有限制的",
+        "start_raw": 275.633,
+        "start_formatted": "00:04:35:632",
+        "duration_raw": 1.167,
+        "duration_formatted": "00:00:01:167"
+    },
+    {
+        "text": "所以呢這個不可以一竹竿打翻整船人",
+        "start_raw": 276.8,
+        "start_formatted": "00:04:36:800",
+        "duration_raw": 2.9,
+        "duration_formatted": "00:00:02:899"
+    },
+    {
+        "text": "但是呢如果是「住」馬來西亞的話",
+        "start_raw": 279.733,
+        "start_formatted": "00:04:39:733",
+        "duration_raw": 2.7,
+        "duration_formatted": "00:00:02:700"
+    },
+    {
+        "text": "就完全沒有這個問題啦",
+        "start_raw": 282.433,
+        "start_formatted": "00:04:42:432",
+        "duration_raw": 1.267,
+        "duration_formatted": "00:00:01:266"
+    },
+    {
+        "text": "因為整間家都是我的",
+        "start_raw": 283.733,
+        "start_formatted": "00:04:43:733",
+        "duration_raw": 1.8,
+        "duration_formatted": "00:00:01:800"
+    },
+    {
+        "text": "我一天洗多少次都不成問題",
+        "start_raw": 285.533,
+        "start_formatted": "00:04:45:533",
+        "duration_raw": 2.3,
+        "duration_formatted": "00:00:02:299"
+    },
+    {
+        "text": "應該有觀眾會心想",
+        "start_raw": 287.833,
+        "start_formatted": "00:04:47:833",
+        "duration_raw": 1.433,
+        "duration_formatted": "00:00:01:433"
+    },
+    {
+        "text": "哈\n洗衣服都可以成為一個規矩",
+        "start_raw": 289.266,
+        "start_formatted": "00:04:49:266",
+        "duration_raw": 2.367,
+        "duration_formatted": "00:00:02:367"
+    },
+    {
+        "text": "那其實如果你站在屋主的角度呢",
+        "start_raw": 291.633,
+        "start_formatted": "00:04:51:632",
+        "duration_raw": 2.4,
+        "duration_formatted": "00:00:02:399"
+    },
+    {
+        "text": "你跟屋主住在一起",
+        "start_raw": 294.033,
+        "start_formatted": "00:04:54:033",
+        "duration_raw": 1.167,
+        "duration_formatted": "00:00:01:167"
+    },
+    {
+        "text": "屋主當然是為了要省水費啦",
+        "start_raw": 295.233,
+        "start_formatted": "00:04:55:233",
+        "duration_raw": 1.933,
+        "duration_formatted": "00:00:01:933"
+    },
+    {
+        "text": "省水費的方式呢",
+        "start_raw": 297.166,
+        "start_formatted": "00:04:57:165",
+        "duration_raw": 1.1,
+        "duration_formatted": "00:00:01:100"
+    },
+    {
+        "text": "就是不允許你每天都洗衣",
+        "start_raw": 298.266,
+        "start_formatted": "00:04:58:266",
+        "duration_raw": 2.267,
+        "duration_formatted": "00:00:02:266"
+    },
+    {
+        "text": "一個禮拜可以洗到一兩次",
+        "start_raw": 300.533,
+        "start_formatted": "00:05:00:533",
+        "duration_raw": 1.7,
+        "duration_formatted": "00:00:01:700"
+    },
+    {
+        "text": "其實算是不錯了的啦",
+        "start_raw": 302.233,
+        "start_formatted": "00:05:02:233",
+        "duration_raw": 1.3,
+        "duration_formatted": "00:00:01:300"
+    },
+    {
+        "text": "但是呢我本身的習慣呢",
+        "start_raw": 303.566,
+        "start_formatted": "00:05:03:565",
+        "duration_raw": 1.5,
+        "duration_formatted": "00:00:01:500"
+    },
+    {
+        "text": "我回到馬來西亞過後哦",
+        "start_raw": 305.066,
+        "start_formatted": "00:05:05:065",
+        "duration_raw": 1.267,
+        "duration_formatted": "00:00:01:266"
+    },
+    {
+        "text": "可以講是幾乎每天都洗衣啊",
+        "start_raw": 306.333,
+        "start_formatted": "00:05:06:333",
+        "duration_raw": 2.067,
+        "duration_formatted": "00:00:02:067"
+    },
+    {
+        "text": "可能馬來西亞的水費沒有那麼貴吧",
+        "start_raw": 308.4,
+        "start_formatted": "00:05:08:399",
+        "duration_raw": 2.2,
+        "duration_formatted": "00:00:02:200"
+    },
+    {
+        "text": "這個也是",
+        "start_raw": 310.6,
+        "start_formatted": "00:05:10:600",
+        "duration_raw": 1.133,
+        "duration_formatted": "00:00:01:133"
+    },
+    {
+        "text": "“租”新加坡",
+        "start_raw": 311.733,
+        "start_formatted": "00:05:11:733",
+        "duration_raw": 1.033,
+        "duration_formatted": "00:00:01:032"
+    },
+    {
+        "text": "跟“住”馬來西亞",
+        "start_raw": 312.766,
+        "start_formatted": "00:05:12:766",
+        "duration_raw": 1.334,
+        "duration_formatted": "00:00:01:334"
+    },
+    {
+        "text": "其中一個不同的地方啦",
+        "start_raw": 314.1,
+        "start_formatted": "00:05:14:100",
+        "duration_raw": 1.766,
+        "duration_formatted": "00:00:01:766"
+    },
+    {
+        "text": "是啊",
+        "start_raw": 322.0,
+        "start_formatted": "00:05:22:000",
+        "duration_raw": 0.933,
+        "duration_formatted": "00:00:00:933"
+    },
+    {
+        "text": "玩玩啊你以為",
+        "start_raw": 322.933,
+        "start_formatted": "00:05:22:932",
+        "duration_raw": 1.467,
+        "duration_formatted": "00:00:01:467"
+    },
+    {
+        "text": "曬衣服都可以拿出來講啊",
+        "start_raw": 324.4,
+        "start_formatted": "00:05:24:399",
+        "duration_raw": 2.4,
+        "duration_formatted": "00:00:02:399"
+    },
+    {
+        "text": "我就突然間想到哦",
+        "start_raw": 326.833,
+        "start_formatted": "00:05:26:833",
+        "duration_raw": 1.533,
+        "duration_formatted": "00:00:01:532"
+    },
+    {
+        "text": "上一次呢我就被一個沒有良心的屋主騙訂金",
+        "start_raw": 328.4,
+        "start_formatted": "00:05:28:399",
+        "duration_raw": 3.2,
+        "duration_formatted": "00:00:03:200"
+    },
+    {
+        "text": "我覺得她是故意騙訂金的啦",
+        "start_raw": 332.066,
+        "start_formatted": "00:05:32:065",
+        "duration_raw": 2.134,
+        "duration_formatted": "00:00:02:133"
+    },
+    {
+        "text": "有一些屋主呢",
+        "start_raw": 334.2,
+        "start_formatted": "00:05:34:199",
+        "duration_raw": 0.766,
+        "duration_formatted": "00:00:00:766"
+    },
+    {
+        "text": "就會像上次我遇到的",
+        "start_raw": 334.966,
+        "start_formatted": "00:05:34:966",
+        "duration_raw": 1.467,
+        "duration_formatted": "00:00:01:467"
+    },
+    {
+        "text": "沒有良心的屋主一樣",
+        "start_raw": 336.433,
+        "start_formatted": "00:05:36:432",
+        "duration_raw": 1.3,
+        "duration_formatted": "00:00:01:300"
+    },
+    {
+        "text": "連曬衣服呢",
+        "start_raw": 337.766,
+        "start_formatted": "00:05:37:766",
+        "duration_raw": 1.267,
+        "duration_formatted": "00:00:01:266"
+    },
+    {
+        "text": "曬在哪一根竹竿上面她都要管",
+        "start_raw": 339.033,
+        "start_formatted": "00:05:39:033",
+        "duration_raw": 2.6,
+        "duration_formatted": "00:00:02:600"
+    },
+    {
+        "text": "但是還是一樣啦",
+        "start_raw": 341.666,
+        "start_formatted": "00:05:41:665",
+        "duration_raw": 1.1,
+        "duration_formatted": "00:00:01:100"
+    },
+    {
+        "text": "我不可以一竹竿打翻整船人OK",
+        "start_raw": 342.766,
+        "start_formatted": "00:05:42:766",
+        "duration_raw": 2.6,
+        "duration_formatted": "00:00:02:600"
+    },
+    {
+        "text": "只是我那麼不好採",
+        "start_raw": 345.4,
+        "start_formatted": "00:05:45:399",
+        "duration_raw": 1.266,
+        "duration_formatted": "00:00:01:266"
+    },
+    {
+        "text": "遇到這樣子的屋主",
+        "start_raw": 346.666,
+        "start_formatted": "00:05:46:665",
+        "duration_raw": 1.067,
+        "duration_formatted": "00:00:01:066"
+    },
+    {
+        "text": "其實還有好的屋主在的",
+        "start_raw": 347.733,
+        "start_formatted": "00:05:47:733",
+        "duration_raw": 1.5,
+        "duration_formatted": "00:00:01:500"
+    },
+    {
+        "text": "這個呢也是我覺得其中一個",
+        "start_raw": 349.3,
+        "start_formatted": "00:05:49:300",
+        "duration_raw": 2.066,
+        "duration_formatted": "00:00:02:065"
+    },
+    {
+        "text": "“租”新加坡跟“住”馬來西亞最大的不同啦",
+        "start_raw": 351.366,
+        "start_formatted": "00:05:51:365",
+        "duration_raw": 2.734,
+        "duration_formatted": "00:00:02:734"
+    },
+    {
+        "text": "因為租別人的房子嘛",
+        "start_raw": 354.133,
+        "start_formatted": "00:05:54:132",
+        "duration_raw": 1.833,
+        "duration_formatted": "00:00:01:833"
+    },
+    {
+        "text": "屋主呢可以出很多花招",
+        "start_raw": 355.966,
+        "start_formatted": "00:05:55:966",
+        "duration_raw": 1.7,
+        "duration_formatted": "00:00:01:700"
+    },
+    {
+        "text": "有很多千奇百怪的規矩",
+        "start_raw": 357.7,
+        "start_formatted": "00:05:57:699",
+        "duration_raw": 1.966,
+        "duration_formatted": "00:00:01:966"
+    },
+    {
+        "text": "那麼我就突然想到哦",
+        "start_raw": 359.7,
+        "start_formatted": "00:05:59:699",
+        "duration_raw": 1.4,
+        "duration_formatted": "00:00:01:399"
+    },
+    {
+        "text": "其中一條條規呢",
+        "start_raw": 361.266,
+        "start_formatted": "00:06:01:266",
+        "duration_raw": 1.5,
+        "duration_formatted": "00:00:01:500"
+    },
+    {
+        "text": "上次我遇到的就是",
+        "start_raw": 362.8,
+        "start_formatted": "00:06:02:800",
+        "duration_raw": 1.2,
+        "duration_formatted": "00:00:01:199"
+    },
+    {
+        "text": "我連曬衣服噢都要依據她的規矩",
+        "start_raw": 364.033,
+        "start_formatted": "00:06:04:033",
+        "duration_raw": 2.333,
+        "duration_formatted": "00:00:02:333"
+    },
+    {
+        "text": "曬在第二根桿子上面",
+        "start_raw": 366.366,
+        "start_formatted": "00:06:06:365",
+        "duration_raw": 2.134,
+        "duration_formatted": "00:00:02:133"
+    },
+    {
+        "text": "其他的桿子不可以曬",
+        "start_raw": 368.533,
+        "start_formatted": "00:06:08:533",
+        "duration_raw": 1.467,
+        "duration_formatted": "00:00:01:467"
+    },
+    {
+        "text": "當然呢如果是在自己的家的話",
+        "start_raw": 370.033,
+        "start_formatted": "00:06:10:033",
+        "duration_raw": 1.8,
+        "duration_formatted": "00:00:01:800"
+    },
+    {
+        "text": "就完全沒有這樣子的問題啦",
+        "start_raw": 371.833,
+        "start_formatted": "00:06:11:833",
+        "duration_raw": 1.4,
+        "duration_formatted": "00:00:01:399"
+    },
+    {
+        "text": "如果你們是還沒有看我房屋糾紛的影片的話",
+        "start_raw": 373.233,
+        "start_formatted": "00:06:13:233",
+        "duration_raw": 3.033,
+        "duration_formatted": "00:00:03:032"
+    },
+    {
+        "text": "就去點擊這邊看一看",
+        "start_raw": 376.266,
+        "start_formatted": "00:06:16:266",
+        "duration_raw": 1.734,
+        "duration_formatted": "00:00:01:734"
+    },
+    {
+        "text": "現在想回去真的是覺得很好笑吶吶",
+        "start_raw": 378.1,
+        "start_formatted": "00:06:18:100",
+        "duration_raw": 2.066,
+        "duration_formatted": "00:00:02:065"
+    },
+    {
+        "text": "吶這時候呢",
+        "start_raw": 380.633,
+        "start_formatted": "00:06:20:632",
+        "duration_raw": 1.433,
+        "duration_formatted": "00:00:01:433"
+    },
+    {
+        "text": "肯定就會有人講啦",
+        "start_raw": 382.066,
+        "start_formatted": "00:06:22:065",
+        "duration_raw": 1.3,
+        "duration_formatted": "00:00:01:300"
+    },
+    {
+        "text": "你在馬來西亞租房子",
+        "start_raw": 383.366,
+        "start_formatted": "00:06:23:365",
+        "duration_raw": 1.834,
+        "duration_formatted": "00:00:01:834"
+    },
+    {
+        "text": "也是一樣會有同樣的情況啊",
+        "start_raw": 385.2,
+        "start_formatted": "00:06:25:199",
+        "duration_raw": 2.0,
+        "duration_formatted": "00:00:02:000"
+    },
+    {
+        "text": "Of course當然",
+        "start_raw": 387.2,
+        "start_formatted": "00:06:27:199",
+        "duration_raw": 1.0,
+        "duration_formatted": "00:00:01:000"
+    },
+    {
+        "text": "不管",
+        "start_raw": 388.2,
+        "start_formatted": "00:06:28:199",
+        "duration_raw": 0.733,
+        "duration_formatted": "00:00:00:733"
+    },
+    {
+        "text": "到哪一個國家呢",
+        "start_raw": 388.933,
+        "start_formatted": "00:06:28:932",
+        "duration_raw": 1.6,
+        "duration_formatted": "00:00:01:600"
+    },
+    {
+        "text": "都會有一樣的人",
+        "start_raw": 390.566,
+        "start_formatted": "00:06:30:565",
+        "duration_raw": 1.334,
+        "duration_formatted": "00:00:01:334"
+    },
+    {
+        "text": "千奇百怪",
+        "start_raw": 391.9,
+        "start_formatted": "00:06:31:899",
+        "duration_raw": 1.233,
+        "duration_formatted": "00:00:01:233"
+    },
+    {
+        "text": "奇奇怪怪的屋主",
+        "start_raw": 393.133,
+        "start_formatted": "00:06:33:132",
+        "duration_raw": 1.233,
+        "duration_formatted": "00:00:01:233"
+    },
+    {
+        "text": "不管在哪一個國家都有",
+        "start_raw": 394.366,
+        "start_formatted": "00:06:34:365",
+        "duration_raw": 1.534,
+        "duration_formatted": "00:00:01:534"
+    },
+    {
+        "text": "隻呢這支影片是依據我個人的經驗",
+        "start_raw": 395.9,
+        "start_formatted": "00:06:35:899",
+        "duration_raw": 2.866,
+        "duration_formatted": "00:00:02:866"
+    },
+    {
+        "text": "我自己過往所遇到的東西",
+        "start_raw": 398.766,
+        "start_formatted": "00:06:38:766",
+        "duration_raw": 1.667,
+        "duration_formatted": "00:00:01:667"
+    },
+    {
+        "text": "來跟你們分享",
+        "start_raw": 400.433,
+        "start_formatted": "00:06:40:432",
+        "duration_raw": 1.1,
+        "duration_formatted": "00:00:01:100"
+    },
+    {
+        "text": "“租”新加坡跟“住”馬來西亞的不同",
+        "start_raw": 401.566,
+        "start_formatted": "00:06:41:565",
+        "duration_raw": 3.4,
+        "duration_formatted": "00:00:03:399"
+    },
+    {
+        "text": "所以呢",
+        "start_raw": 405.0,
+        "start_formatted": "00:06:45:000",
+        "duration_raw": 0.533,
+        "duration_formatted": "00:00:00:533"
+    },
+    {
+        "text": "請在看影片的你們",
+        "start_raw": 405.533,
+        "start_formatted": "00:06:45:533",
+        "duration_raw": 1.333,
+        "duration_formatted": "00:00:01:332"
+    },
+    {
+        "text": "千萬不要對號入座",
+        "start_raw": 406.866,
+        "start_formatted": "00:06:46:865",
+        "duration_raw": 1.467,
+        "duration_formatted": "00:00:01:467"
+    },
+    {
+        "text": "OK",
+        "start_raw": 408.333,
+        "start_formatted": "00:06:48:333",
+        "duration_raw": 0.6,
+        "duration_formatted": "00:00:00:600"
+    },
+    {
+        "text": "這個純粹只是一個分享",
+        "start_raw": 408.933,
+        "start_formatted": "00:06:48:932",
+        "duration_raw": 2.3,
+        "duration_formatted": "00:00:02:299"
+    },
+    {
+        "text": "21度",
+        "start_raw": 412.2,
+        "start_formatted": "00:06:52:199",
+        "duration_raw": 1.3,
+        "duration_formatted": "00:00:01:300"
+    },
+    {
+        "text": "是的",
+        "start_raw": 413.6,
+        "start_formatted": "00:06:53:600",
+        "duration_raw": 0.6,
+        "duration_formatted": "00:00:00:600"
+    },
+    {
+        "text": "「租」新加坡哦",
+        "start_raw": 414.2,
+        "start_formatted": "00:06:54:199",
+        "duration_raw": 1.4,
+        "duration_formatted": "00:00:01:399"
+    },
+    {
+        "text": "我有試過啦",
+        "start_raw": 415.6,
+        "start_formatted": "00:06:55:600",
+        "duration_raw": 1.0,
+        "duration_formatted": "00:00:01:000"
+    },
+    {
+        "text": "如果我沒有記錯就是有兩次",
+        "start_raw": 416.6,
+        "start_formatted": "00:06:56:600",
+        "duration_raw": 2.5,
+        "duration_formatted": "00:00:02:500"
+    },
+    {
+        "text": "我所租的那間房間哦",
+        "start_raw": 419.1,
+        "start_formatted": "00:06:59:100",
+        "duration_raw": 1.6,
+        "duration_formatted": "00:00:01:600"
+    },
+    {
+        "text": "是有溫度的限制的",
+        "start_raw": 420.733,
+        "start_formatted": "00:07:00:733",
+        "duration_raw": 2.0,
+        "duration_formatted": "00:00:02:000"
+    },
+    {
+        "text": "也就是說不能夠超過多少度",
+        "start_raw": 422.766,
+        "start_formatted": "00:07:02:766",
+        "duration_raw": 2.0,
+        "duration_formatted": "00:00:02:000"
+    },
+    {
+        "text": "只可以調到他指定的溫度",
+        "start_raw": 424.833,
+        "start_formatted": "00:07:04:833",
+        "duration_raw": 2.2,
+        "duration_formatted": "00:00:02:200"
+    },
+    {
+        "text": "最搞笑的是什麼",
+        "start_raw": 427.066,
+        "start_formatted": "00:07:07:065",
+        "duration_raw": 1.034,
+        "duration_formatted": "00:00:01:034"
+    },
+    {
+        "text": "有一些屋主啦",
+        "start_raw": 428.133,
+        "start_formatted": "00:07:08:132",
+        "duration_raw": 1.467,
+        "duration_formatted": "00:00:01:467"
+    },
+    {
+        "text": "因為冷氣呢是蠻耗電費的",
+        "start_raw": 429.633,
+        "start_formatted": "00:07:09:632",
+        "duration_raw": 1.867,
+        "duration_formatted": "00:00:01:867"
+    },
+    {
+        "text": "而且在新加坡的電費呢算是蠻昂貴的",
+        "start_raw": 431.533,
+        "start_formatted": "00:07:11:533",
+        "duration_raw": 2.833,
+        "duration_formatted": "00:00:02:833"
+    },
+    {
+        "text": "所以呢為了節省這個電費呢",
+        "start_raw": 434.433,
+        "start_formatted": "00:07:14:432",
+        "duration_raw": 2.233,
+        "duration_formatted": "00:00:02:233"
+    },
+    {
+        "text": "他們就會有諸多限制",
+        "start_raw": 436.666,
+        "start_formatted": "00:07:16:665",
+        "duration_raw": 1.567,
+        "duration_formatted": "00:00:01:567"
+    },
+    {
+        "text": "例如",
+        "start_raw": 438.266,
+        "start_formatted": "00:07:18:266",
+        "duration_raw": 0.567,
+        "duration_formatted": "00:00:00:567"
+    },
+    {
+        "text": "冷氣呢只可以開8個小時到12個小時不等",
+        "start_raw": 438.833,
+        "start_formatted": "00:07:18:833",
+        "duration_raw": 3.0,
+        "duration_formatted": "00:00:03:000"
+    },
+    {
+        "text": "有一些屋主啦他們很好啊",
+        "start_raw": 441.866,
+        "start_formatted": "00:07:21:865",
+        "duration_raw": 1.4,
+        "duration_formatted": "00:00:01:399"
+    },
+    {
+        "text": "就給你10點就開",
+        "start_raw": 443.266,
+        "start_formatted": "00:07:23:266",
+        "duration_raw": 1.234,
+        "duration_formatted": "00:00:01:234"
+    },
+    {
+        "text": "開了過後到早上的7點哦",
+        "start_raw": 444.5,
+        "start_formatted": "00:07:24:500",
+        "duration_raw": 2.466,
+        "duration_formatted": "00:00:02:466"
+    },
+    {
+        "text": "你不需要關",
+        "start_raw": 447.0,
+        "start_formatted": "00:07:27:000",
+        "duration_raw": 0.933,
+        "duration_formatted": "00:00:00:933"
+    },
+    {
+        "text": "他們會直接把那個總頭關掉",
+        "start_raw": 447.966,
+        "start_formatted": "00:07:27:966",
+        "duration_raw": 2.034,
+        "duration_formatted": "00:00:02:033"
+    },
+    {
+        "text": "但是呢還是一樣的",
+        "start_raw": 450.033,
+        "start_formatted": "00:07:30:033",
+        "duration_raw": 1.333,
+        "duration_formatted": "00:00:01:332"
+    },
+    {
+        "text": "我要講的是我最後一次租的那間房間啦",
+        "start_raw": 451.366,
+        "start_formatted": "00:07:31:365",
+        "duration_raw": 3.3,
+        "duration_formatted": "00:00:03:299"
+    },
+    {
+        "text": "那個屋主真的是很好",
+        "start_raw": 454.733,
+        "start_formatted": "00:07:34:733",
+        "duration_raw": 1.233,
+        "duration_formatted": "00:00:01:233"
+    },
+    {
+        "text": "他也沒有什麼限制",
+        "start_raw": 456.033,
+        "start_formatted": "00:07:36:033",
+        "duration_raw": 1.7,
+        "duration_formatted": "00:00:01:700"
+    },
+    {
+        "text": "他有講你要開冷氣的時候就開",
+        "start_raw": 457.766,
+        "start_formatted": "00:07:37:766",
+        "duration_raw": 2.134,
+        "duration_formatted": "00:00:02:133"
+    },
+    {
+        "text": "只是我們​​也是會做人啦",
+        "start_raw": 459.933,
+        "start_formatted": "00:07:39:932",
+        "duration_raw": 1.567,
+        "duration_formatted": "00:00:01:567"
+    },
+    {
+        "text": "我跟Z嫂呢通常只是從10點開開",
+        "start_raw": 461.5,
+        "start_formatted": "00:07:41:500",
+        "duration_raw": 2.866,
+        "duration_formatted": "00:00:02:866"
+    },
+    {
+        "text": "到早上的6點這樣子",
+        "start_raw": 464.4,
+        "start_formatted": "00:07:44:399",
+        "duration_raw": 2.0,
+        "duration_formatted": "00:00:02:000"
+    },
+    {
+        "text": "我們就起來關掉了",
+        "start_raw": 466.4,
+        "start_formatted": "00:07:46:399",
+        "duration_raw": 1.266,
+        "duration_formatted": "00:00:01:266"
+    },
+    {
+        "text": "天氣太過炎熱的時候呢",
+        "start_raw": 467.7,
+        "start_formatted": "00:07:47:699",
+        "duration_raw": 1.7,
+        "duration_formatted": "00:00:01:700"
+    },
+    {
+        "text": "我們也會開下午一兩個小時這樣子啦",
+        "start_raw": 469.4,
+        "start_formatted": "00:07:49:399",
+        "duration_raw": 2.666,
+        "duration_formatted": "00:00:02:665"
+    },
+    {
+        "text": "所以呢當房客也是要會做人",
+        "start_raw": 472.1,
+        "start_formatted": "00:07:52:100",
+        "duration_raw": 2.2,
+        "duration_formatted": "00:00:02:200"
+    },
+    {
+        "text": "哥哥姐姐哈嘍",
+        "start_raw": 474.333,
+        "start_formatted": "00:07:54:333",
+        "duration_raw": 1.767,
+        "duration_formatted": "00:00:01:766"
+    },
+    {
+        "text": "我在睡覺",
+        "start_raw": 476.1,
+        "start_formatted": "00:07:56:100",
+        "duration_raw": 1.766,
+        "duration_formatted": "00:00:01:766"
+    },
+    {
+        "text": "又要上鏡",
+        "start_raw": 477.9,
+        "start_formatted": "00:07:57:899",
+        "duration_raw": 1.333,
+        "duration_formatted": "00:00:01:332"
+    },
+    {
+        "text": "拿著粘土",
+        "start_raw": 479.233,
+        "start_formatted": "00:07:59:233",
+        "duration_raw": 1.6,
+        "duration_formatted": "00:00:01:600"
+    },
+    {
+        "text": "我的",
+        "start_raw": 480.866,
+        "start_formatted": "00:08:00:865",
+        "duration_raw": 0.934,
+        "duration_formatted": "00:00:00:934"
+    },
+    {
+        "text": "是的",
+        "start_raw": 481.8,
+        "start_formatted": "00:08:01:800",
+        "duration_raw": 0.666,
+        "duration_formatted": "00:00:00:666"
+    },
+    {
+        "text": "我愛粘土",
+        "start_raw": 482.466,
+        "start_formatted": "00:08:02:466",
+        "duration_raw": 1.2,
+        "duration_formatted": "00:00:01:199"
+    },
+    {
+        "text": "是的",
+        "start_raw": 483.666,
+        "start_formatted": "00:08:03:665",
+        "duration_raw": 0.7,
+        "duration_formatted": "00:00:00:700"
+    },
+    {
+        "text": "我愛粘土",
+        "start_raw": 484.366,
+        "start_formatted": "00:08:04:365",
+        "duration_raw": 1.367,
+        "duration_formatted": "00:00:01:367"
+    },
+    {
+        "text": "是的",
+        "start_raw": 485.733,
+        "start_formatted": "00:08:05:733",
+        "duration_raw": 0.767,
+        "duration_formatted": "00:00:00:767"
+    },
+    {
+        "text": "不要偷我粘土",
+        "start_raw": 486.5,
+        "start_formatted": "00:08:06:500",
+        "duration_raw": 1.566,
+        "duration_formatted": "00:00:01:566"
+    },
+    {
+        "text": "跟哥哥姐姐講晚安",
+        "start_raw": 488.233,
+        "start_formatted": "00:08:08:233",
+        "duration_raw": 1.267,
+        "duration_formatted": "00:00:01:266"
+    },
+    {
+        "text": "哥哥姐姐晚安",
+        "start_raw": 489.833,
+        "start_formatted": "00:08:09:833",
+        "duration_raw": 1.467,
+        "duration_formatted": "00:00:01:467"
+    },
+    {
+        "text": "哥哥姐姐拜拜",
+        "start_raw": 491.3,
+        "start_formatted": "00:08:11:300",
+        "duration_raw": 2.0,
+        "duration_formatted": "00:00:02:000"
+    },
+    {
+        "text": "好了你去你去",
+        "start_raw": 493.4,
+        "start_formatted": "00:08:13:399",
+        "duration_raw": 0.933,
+        "duration_formatted": "00:00:00:933"
+    },
+    {
+        "text": "我還沒講完",
+        "start_raw": 494.333,
+        "start_formatted": "00:08:14:333",
+        "duration_raw": 0.933,
+        "duration_formatted": "00:00:00:933"
+    },
+    {
+        "text": "那一樣的",
+        "start_raw": 495.3,
+        "start_formatted": "00:08:15:300",
+        "duration_raw": 1.266,
+        "duration_formatted": "00:00:01:266"
+    },
+    {
+        "text": "「住」馬來西亞呢",
+        "start_raw": 496.566,
+        "start_formatted": "00:08:16:565",
+        "duration_raw": 1.567,
+        "duration_formatted": "00:00:01:567"
+    },
+    {
+        "text": "我住的是我自己的家",
+        "start_raw": 498.133,
+        "start_formatted": "00:08:18:132",
+        "duration_raw": 1.533,
+        "duration_formatted": "00:00:01:532"
+    },
+    {
+        "text": "所以我隨時隨地",
+        "start_raw": 499.666,
+        "start_formatted": "00:08:19:665",
+        "duration_raw": 1.5,
+        "duration_formatted": "00:00:01:500"
+    },
+    {
+        "text": "要開冷氣就開",
+        "start_raw": 501.166,
+        "start_formatted": "00:08:21:165",
+        "duration_raw": 1.367,
+        "duration_formatted": "00:00:01:367"
+    },
+    {
+        "text": "完全沒有任何的限制",
+        "start_raw": 502.566,
+        "start_formatted": "00:08:22:565",
+        "duration_raw": 1.767,
+        "duration_formatted": "00:00:01:766"
+    },
+    {
+        "text": "好啦",
+        "start_raw": 504.333,
+        "start_formatted": "00:08:24:333",
+        "duration_raw": 0.5,
+        "duration_formatted": "00:00:00:500"
+    },
+    {
+        "text": "那麼我覺得今天影片就到這邊啦",
+        "start_raw": 504.833,
+        "start_formatted": "00:08:24:833",
+        "duration_raw": 2.2,
+        "duration_formatted": "00:00:02:200"
+    },
+    {
+        "text": "不知不覺又到晚上要睡覺了",
+        "start_raw": 507.366,
+        "start_formatted": "00:08:27:365",
+        "duration_raw": 1.834,
+        "duration_formatted": "00:00:01:834"
+    },
+    {
+        "text": "那其實這支影片呢",
+        "start_raw": 509.266,
+        "start_formatted": "00:08:29:266",
+        "duration_raw": 1.3,
+        "duration_formatted": "00:00:01:300"
+    },
+    {
+        "text": "你這樣子看起來哦",
+        "start_raw": 510.566,
+        "start_formatted": "00:08:30:565",
+        "duration_raw": 1.5,
+        "duration_formatted": "00:00:01:500"
+    },
+    {
+        "text": "好像一直在講新加坡不好",
+        "start_raw": 512.066,
+        "start_formatted": "00:08:32:066",
+        "duration_raw": 1.634,
+        "duration_formatted": "00:00:01:633"
+    },
+    {
+        "text": "其實不是啊",
+        "start_raw": 513.7,
+        "start_formatted": "00:08:33:700",
+        "duration_raw": 0.833,
+        "duration_formatted": "00:00:00:833"
+    },
+    {
+        "text": "OK",
+        "start_raw": 514.533,
+        "start_formatted": "00:08:34:533",
+        "duration_raw": 0.433,
+        "duration_formatted": "00:00:00:433"
+    },
+    {
+        "text": "這個純屬我的個人經驗分享",
+        "start_raw": 514.966,
+        "start_formatted": "00:08:34:966",
+        "duration_raw": 2.134,
+        "duration_formatted": "00:00:02:133"
+    },
+    {
+        "text": "只是我突發奇想，想要跟你們分享一下",
+        "start_raw": 517.1,
+        "start_formatted": "00:08:37:100",
+        "duration_raw": 2.366,
+        "duration_formatted": "00:00:02:366"
+    },
+    {
+        "text": "從我的point of view",
+        "start_raw": 519.5,
+        "start_formatted": "00:08:39:500",
+        "duration_raw": 1.266,
+        "duration_formatted": "00:00:01:266"
+    },
+    {
+        "text": "跟你們分享",
+        "start_raw": 520.766,
+        "start_formatted": "00:08:40:765",
+        "duration_raw": 0.834,
+        "duration_formatted": "00:00:00:834"
+    },
+    {
+        "text": "我之前在新加坡租房",
+        "start_raw": 521.6,
+        "start_formatted": "00:08:41:600",
+        "duration_raw": 2.4,
+        "duration_formatted": "00:00:02:399"
+    },
+    {
+        "text": "Compared with在馬來西亞生活過後",
+        "start_raw": 524.033,
+        "start_formatted": "00:08:44:033",
+        "duration_raw": 2.4,
+        "duration_formatted": "00:00:02:399"
+    },
+    {
+        "text": "住在自己的家",
+        "start_raw": 526.433,
+        "start_formatted": "00:08:46:432",
+        "duration_raw": 1.167,
+        "duration_formatted": "00:00:01:167"
+    },
+    {
+        "text": "兩邊對比有什麼不同",
+        "start_raw": 527.6,
+        "start_formatted": "00:08:47:600",
+        "duration_raw": 1.633,
+        "duration_formatted": "00:00:01:633"
+    },
+    {
+        "text": "因為之前呢",
+        "start_raw": 529.233,
+        "start_formatted": "00:08:49:232",
+        "duration_raw": 0.733,
+        "duration_formatted": "00:00:00:733"
+    },
+    {
+        "text": "有觀眾問我",
+        "start_raw": 529.966,
+        "start_formatted": "00:08:49:966",
+        "duration_raw": 0.9,
+        "duration_formatted": "00:00:00:900"
+    },
+    {
+        "text": "如果哈他要去新加坡租房的話",
+        "start_raw": 530.866,
+        "start_formatted": "00:08:50:865",
+        "duration_raw": 1.834,
+        "duration_formatted": "00:00:01:834"
+    },
+    {
+        "text": "有什麼東西要注意的",
+        "start_raw": 532.7,
+        "start_formatted": "00:08:52:700",
+        "duration_raw": 1.1,
+        "duration_formatted": "00:00:01:100"
+    },
+    {
+        "text": "我也沒有辦法一個一個的去回你們的PM",
+        "start_raw": 533.8,
+        "start_formatted": "00:08:53:799",
+        "duration_raw": 2.6,
+        "duration_formatted": "00:00:02:600"
+    },
+    {
+        "text": "所以呢希望在看影片的你們",
+        "start_raw": 536.4,
+        "start_formatted": "00:08:56:399",
+        "duration_raw": 2.2,
+        "duration_formatted": "00:00:02:200"
+    },
+    {
+        "text": "想知道在新加坡租房間",
+        "start_raw": 538.6,
+        "start_formatted": "00:08:58:600",
+        "duration_raw": 2.066,
+        "duration_formatted": "00:00:02:065"
+    },
+    {
+        "text": "Compare with",
+        "start_raw": 540.666,
+        "start_formatted": "00:09:00:666",
+        "duration_raw": 0.9,
+        "duration_formatted": "00:00:00:900"
+    },
+    {
+        "text": "住在馬來西亞住自己的房子哦",
+        "start_raw": 541.566,
+        "start_formatted": "00:09:01:566",
+        "duration_raw": 2.367,
+        "duration_formatted": "00:00:02:367"
+    },
+    {
+        "text": "差別到底是什麼呢",
+        "start_raw": 543.933,
+        "start_formatted": "00:09:03:932",
+        "duration_raw": 1.267,
+        "duration_formatted": "00:00:01:266"
+    },
+    {
+        "text": "對我而言",
+        "start_raw": 545.2,
+        "start_formatted": "00:09:05:200",
+        "duration_raw": 0.9,
+        "duration_formatted": "00:00:00:900"
+    },
+    {
+        "text": "這些呢就是其中幾個",
+        "start_raw": 546.1,
+        "start_formatted": "00:09:06:100",
+        "duration_raw": 1.2,
+        "duration_formatted": "00:00:01:199"
+    },
+    {
+        "text": "在日常生活中會碰到的一些差別",
+        "start_raw": 547.3,
+        "start_formatted": "00:09:07:299",
+        "duration_raw": 2.466,
+        "duration_formatted": "00:00:02:466"
+    },
+    {
+        "text": "當然還有很多的",
+        "start_raw": 549.766,
+        "start_formatted": "00:09:09:765",
+        "duration_raw": 1.1,
+        "duration_formatted": "00:00:01:100"
+    },
+    {
+        "text": "有很多小事",
+        "start_raw": 550.866,
+        "start_formatted": "00:09:10:865",
+        "duration_raw": 0.967,
+        "duration_formatted": "00:00:00:967"
+    },
+    {
+        "text": "也有很多因素",
+        "start_raw": 551.833,
+        "start_formatted": "00:09:11:832",
+        "duration_raw": 1.033,
+        "duration_formatted": "00:00:01:032"
+    },
+    {
+        "text": "可能就是你的屋主的性格啊",
+        "start_raw": 552.9,
+        "start_formatted": "00:09:12:899",
+        "duration_raw": 2.2,
+        "duration_formatted": "00:00:02:200"
+    },
+    {
+        "text": "看你的屋主哦",
+        "start_raw": 555.133,
+        "start_formatted": "00:09:15:133",
+        "duration_raw": 1.067,
+        "duration_formatted": "00:00:01:066"
+    },
+    {
+        "text": "在那間房間裡面所設的條規",
+        "start_raw": 556.2,
+        "start_formatted": "00:09:16:200",
+        "duration_raw": 2.066,
+        "duration_formatted": "00:00:02:065"
+    },
+    {
+        "text": "到底是怎麼樣的",
+        "start_raw": 558.3,
+        "start_formatted": "00:09:18:299",
+        "duration_raw": 1.0,
+        "duration_formatted": "00:00:01:000"
+    },
+    {
+        "text": "這個只是給你們一個參考而已",
+        "start_raw": 559.3,
+        "start_formatted": "00:09:19:299",
+        "duration_raw": 1.866,
+        "duration_formatted": "00:00:01:866"
+    },
+    {
+        "text": "租房子租房間",
+        "start_raw": 561.166,
+        "start_formatted": "00:09:21:166",
+        "duration_raw": 1.367,
+        "duration_formatted": "00:00:01:367"
+    },
+    {
+        "text": "不管你在哪一個國家都一樣",
+        "start_raw": 562.533,
+        "start_formatted": "00:09:22:533",
+        "duration_raw": 2.167,
+        "duration_formatted": "00:00:02:166"
+    },
+    {
+        "text": "但是我這一支Content呢",
+        "start_raw": 564.7,
+        "start_formatted": "00:09:24:700",
+        "duration_raw": 1.4,
+        "duration_formatted": "00:00:01:399"
+    },
+    {
+        "text": "只是分享我“租”新加坡",
+        "start_raw": 566.1,
+        "start_formatted": "00:09:26:100",
+        "duration_raw": 2.1,
+        "duration_formatted": "00:00:02:100"
+    },
+    {
+        "text": "跟我在馬來西亞“住「自己房子",
+        "start_raw": 568.266,
+        "start_formatted": "00:09:28:265",
+        "duration_raw": 2.467,
+        "duration_formatted": "00:00:02:467"
+    },
+    {
+        "text": "對比下來呢",
+        "start_raw": 570.766,
+        "start_formatted": "00:09:30:765",
+        "duration_raw": 1.3,
+        "duration_formatted": "00:00:01:300"
+    },
+    {
+        "text": "所做的一個sharing",
+        "start_raw": 572.066,
+        "start_formatted": "00:09:32:066",
+        "duration_raw": 1.567,
+        "duration_formatted": "00:00:01:567"
+    },
+    {
+        "text": "OK",
+        "start_raw": 573.633,
+        "start_formatted": "00:09:33:633",
+        "duration_raw": 0.7,
+        "duration_formatted": "00:00:00:700"
+    },
+    {
+        "text": "那麼最後呢",
+        "start_raw": 575.133,
+        "start_formatted": "00:09:35:133",
+        "duration_raw": 0.9,
+        "duration_formatted": "00:00:00:900"
+    },
+    {
+        "text": "希望在看影片的你們會喜歡這支影片",
+        "start_raw": 576.033,
+        "start_formatted": "00:09:36:033",
+        "duration_raw": 2.4,
+        "duration_formatted": "00:00:02:399"
+    },
+    {
+        "text": "特別是對一些可能有興趣",
+        "start_raw": 578.466,
+        "start_formatted": "00:09:38:466",
+        "duration_raw": 2.2,
+        "duration_formatted": "00:00:02:200"
+    },
+    {
+        "text": "要在新加坡租房間的你們",
+        "start_raw": 580.666,
+        "start_formatted": "00:09:40:666",
+        "duration_raw": 2.534,
+        "duration_formatted": "00:00:02:533"
+    },
+    {
+        "text": "希望可以幫到你們啦",
+        "start_raw": 583.6,
+        "start_formatted": "00:09:43:600",
+        "duration_raw": 1.033,
+        "duration_formatted": "00:00:01:032"
+    },
+    {
+        "text": "好啦",
+        "start_raw": 584.666,
+        "start_formatted": "00:09:44:666",
+        "duration_raw": 0.467,
+        "duration_formatted": "00:00:00:467"
+    },
+    {
+        "text": "如果喜歡這支影片的話",
+        "start_raw": 585.133,
+        "start_formatted": "00:09:45:133",
+        "duration_raw": 1.4,
+        "duration_formatted": "00:00:01:399"
+    },
+    {
+        "text": "就給我一個「讚」",
+        "start_raw": 586.533,
+        "start_formatted": "00:09:46:533",
+        "duration_raw": 0.967,
+        "duration_formatted": "00:00:00:967"
+    },
+    {
+        "text": "我們...",
+        "start_raw": 587.5,
+        "start_formatted": "00:09:47:500",
+        "duration_raw": 0.466,
+        "duration_formatted": "00:00:00:466"
+    },
+    {
+        "text": "下一個影片見",
+        "start_raw": 587.966,
+        "start_formatted": "00:09:47:966",
+        "duration_raw": 0.867,
+        "duration_formatted": "00:00:00:867"
+    },
+    {
+        "text": "拜",
+        "start_raw": 588.966,
+        "start_formatted": "00:09:48:966",
+        "duration_raw": 0.534,
+        "duration_formatted": "00:00:00:534"
+    },
+    {
+        "text": "OK OK",
+        "start_raw": 589.6,
+        "start_formatted": "00:09:49:600",
+        "duration_raw": 0.7,
+        "duration_formatted": "00:00:00:700"
+    },
+    {
+        "text": " ",
+        "start_raw": 590.3,
+        "start_formatted": "00:09:50:299",
+        "duration_raw": 0.566,
+        "duration_formatted": "00:00:00:566"
+    },
+    {
+        "text": "講講 你要睡覺了",
+        "start_raw": 590.866,
+        "start_formatted": "00:09:50:865",
+        "duration_raw": 1.134,
+        "duration_formatted": "00:00:01:133"
+    },
+    {
+        "text": "我要睡覺了",
+        "start_raw": 592.033,
+        "start_formatted": "00:09:52:033",
+        "duration_raw": 1.2,
+        "duration_formatted": "00:00:01:199"
+    },
+    {
+        "text": "看這個黏土",
+        "start_raw": 593.233,
+        "start_formatted": "00:09:53:232",
+        "duration_raw": 1.433,
+        "duration_formatted": "00:00:01:433"
+    },
+    {
+        "text": "是雞肉雞腿",
+        "start_raw": 594.666,
+        "start_formatted": "00:09:54:666",
+        "duration_raw": 1.834,
+        "duration_formatted": "00:00:01:834"
+    },
+    {
+        "text": "啊啊啊",
+        "start_raw": 596.5,
+        "start_formatted": "00:09:56:500",
+        "duration_raw": 1.466,
+        "duration_formatted": "00:00:01:465"
+    },
+    {
+        "text": "嘟嘟",
+        "start_raw": 597.966,
+        "start_formatted": "00:09:57:966",
+        "duration_raw": 1.3,
+        "duration_formatted": "00:00:01:300"
+    },
+    {
+        "text": "講晚安",
+        "start_raw": 599.266,
+        "start_formatted": "00:09:59:265",
+        "duration_raw": 0.934,
+        "duration_formatted": "00:00:00:934"
+    },
+    {
+        "text": "啊",
+        "start_raw": 600.466,
+        "start_formatted": "00:10:00:466",
+        "duration_raw": 0.9,
+        "duration_formatted": "00:00:00:900"
+    },
+    {
+        "text": "快點講晚安",
+        "start_raw": 601.633,
+        "start_formatted": "00:10:01:633",
+        "duration_raw": 0.967,
+        "duration_formatted": "00:00:00:967"
+    },
+    {
+        "text": "我要關機了",
+        "start_raw": 602.6,
+        "start_formatted": "00:10:02:600",
+        "duration_raw": 1.1,
+        "duration_formatted": "00:00:01:100"
+    },
+    {
+        "text": "晚安",
+        "start_raw": 603.7,
+        "start_formatted": "00:10:03:700",
+        "duration_raw": 1.033,
+        "duration_formatted": "00:00:01:032"
+    },
+    {
+        "text": "這個是雞腿",
+        "start_raw": 604.733,
+        "start_formatted": "00:10:04:732",
+        "duration_raw": 1.367,
+        "duration_formatted": "00:00:01:367"
+    },
+    {
+        "text": "嘟...",
+        "start_raw": 606.1,
+        "start_formatted": "00:10:06:100",
+        "duration_raw": 0.766,
+        "duration_formatted": "00:00:00:766"
+    },
+    {
+        "text": "嘟嘟嘟嘟",
+        "start_raw": 606.866,
+        "start_formatted": "00:10:06:865",
+        "duration_raw": 1.567,
+        "duration_formatted": "00:00:01:567"
+    },
+    {
+        "text": "我看找一天噢",
+        "start_raw": 608.6,
+        "start_formatted": "00:10:08:600",
+        "duration_raw": 1.0,
+        "duration_formatted": "00:00:01:000"
+    },
+    {
+        "text": "要給她自己開一個頻道了",
+        "start_raw": 609.6,
+        "start_formatted": "00:10:09:600",
+        "duration_raw": 1.666,
+        "duration_formatted": "00:00:01:665"
+    },
+    {
+        "text": "Since她那麼喜歡拍",
+        "start_raw": 611.3,
+        "start_formatted": "00:10:11:299",
+        "duration_raw": 1.466,
+        "duration_formatted": "00:00:01:465"
+    },
+    {
+        "text": "跟我一樣",
+        "start_raw": 612.8,
+        "start_formatted": "00:10:12:799",
+        "duration_raw": 0.8,
+        "duration_formatted": "00:00:00:800"
+    },
+    {
+        "text": "好啦",
+        "start_raw": 614.066,
+        "start_formatted": "00:10:14:066",
+        "duration_raw": 0.4,
+        "duration_formatted": "00:00:00:400"
+    },
+    {
+        "text": "拜拜",
+        "start_raw": 614.466,
+        "start_formatted": "00:10:14:466",
+        "duration_raw": 0.934,
+        "duration_formatted": "00:00:00:934"
+    }
+]
