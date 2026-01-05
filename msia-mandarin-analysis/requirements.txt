@@ -3,6 +3,7 @@ youtube-transcript-api
 
 # Translation & Enrichment
 deep-translator
+pypinyin
 
 # NLP & Tokenization
 jieba
